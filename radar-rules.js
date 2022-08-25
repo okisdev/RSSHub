@@ -49,62 +49,6 @@
             { title: '关注的新作品', docs: 'https://docs.rsshub.app/social-media.html#pixiv', source: '/bookmark_new_illust.php', target: '/pixiv/user/illustfollows' },
         ],
     },
-    'twitter.com': {
-        _name: 'Twitter',
-        '.': [
-            {
-                title: '用户时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/user/:id';
-                    }
-                },
-            },
-            {
-                title: '用户媒体时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id/media',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/media/:id';
-                    }
-                },
-            },
-            {
-                title: '用户关注时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/followings/:id';
-                    }
-                },
-            },
-            {
-                title: '用户喜欢列表',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/likes/:id';
-                    }
-                },
-            },
-            {
-                title: '列表时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id/lists/:name',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/list/:id/:name';
-                    }
-                },
-            },
-            { title: '关键词', docs: 'https://docs.rsshub.app/social-media.html#twitter', source: '/search', target: (params, url) => `/twitter/keyword/${new URL(url).searchParams.get('q')}` },
-        ],
-    },
     'github.com': {
         _name: 'GitHub',
         '.': [
@@ -215,13 +159,6 @@
     },
     'wineyun.com': { _name: '酒云网', www: [{ title: '最新商品', docs: 'https://docs.rsshub.app/other.html#jiu-yun-wang', source: ['/:category'], target: '/wineyun/:category' }] },
     'epicgames.com': { _name: 'Epic Games', www: [{ title: '每周免费游戏', docs: 'https://docs.rsshub.app/game.html#epicgames-freegame', source: '/store/zh-CN/free-games', target: '/epicgames/freegames' }] },
-    'nga.cn': {
-        _name: 'NGA',
-        bbs: [
-            { title: '分区帖子', docs: 'https://docs.rsshub.app/bbs.html#nga', source: '/thread.php', target: (params, url) => new URL(url).searchParams.get('fid') && `/nga/forum/${new URL(url).searchParams.get('fid')}` },
-            { title: '帖子', docs: 'https://docs.rsshub.app/bbs.html#nga', source: '/read.php', target: (params, url) => new URL(url).searchParams.get('tid') && `/nga/post/${new URL(url).searchParams.get('tid')}` },
-        ],
-    },
     'playstation.com': {
         _name: 'PlayStation',
         store: [
@@ -319,7 +256,7 @@
     },
     'govopendata.com': { _name: '新闻联播文字版', cn: [{ title: '新闻联播文字版', docs: 'https://docs.rsshub.app/traditional-media.html#xin-wen-lian-bo-wen-zi-ban', source: '/xinwenlianbo', target: '/xinwenlianbo/index' }] },
     'steampowered.com': { _name: 'Steam', store: [{ title: 'search', docs: 'https://docs.rsshub.app/game.html#steam', source: '/search/', target: (params, url) => `/steam/search/${new URL(url).searchParams}` }] },
-    'baijingapp.com': { _name: '白鲸出海', www: [{ title: '文章', docs: 'https://docs.rsshub.app/new-media.html#bai-jing-chu-hai', source: '', target: '/baijing' }] },
+    // 'baijingapp.com': { _name: '白鲸出海', www: [{ title: '文章', docs: 'https://docs.rsshub.app/new-media.html#bai-jing-chu-hai', source: '', target: '/baijing' }] },
     'xiaomi.cn': { _name: '小米社区', www: [{ title: '圈子', docs: 'https://docs.rsshub.app/bbs.html#xiao-mi-she-qu', source: '/board/:boardId', target: '/mi/bbs/board/:boardId' }] },
     '163.com': {
         _name: '网易',
@@ -485,9 +422,8 @@
             },
         ],
     },
-    'apnews.com': { _name: 'AP News', '.': [{ title: '话题', docs: 'https://docs.rsshub.app/traditional-media.html#ap-news', source: '/:topic', target: '/apnews/topics/:topic' }] },
-    'biquge5200.com': { www: [{ title: 'biquge5200.com', docs: 'https://docs.rsshub.app/reading.html#bi-qu-ge-biquge5200-com', source: '/:id', target: '/novel/biquge/:id' }] },
-    'biquge.info': { www: [{ title: 'biquge.info', docs: 'https://docs.rsshub.app/reading.html#bi-qu-ge-biquge-info', source: '/:id', target: '/novel/biqugeinfo/:id' }] },
+    // 'biquge5200.com': { www: [{ title: 'biquge5200.com', docs: 'https://docs.rsshub.app/reading.html#bi-qu-ge-biquge5200-com', source: '/:id', target: '/novel/biquge/:id' }] },
+    // 'biquge.info': { www: [{ title: 'biquge.info', docs: 'https://docs.rsshub.app/reading.html#bi-qu-ge-biquge-info', source: '/:id', target: '/novel/biqugeinfo/:id' }] },
     'matters.news': {
         _name: 'Matters',
         '.': [
@@ -755,16 +691,16 @@
             { title: '首页 / 自考快递', docs: 'https://docs.rsshub.app/government.html#bei-jing-jiao-yu-kao-shi-yuan', source: ['/html/zkkd'], target: '/gov/beijing/bjeea/zkkd' },
         ],
     },
-    'hk01.com': {
-        _name: '香港01',
-        www: [
-            { title: '最 Hit', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: ['/hot', '/'], target: '/hk01/hot' },
-            { title: 'zone', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/zone/:id/:title', target: '/hk01/zone/:id' },
-            { title: 'channel', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/channel/:id/:title', target: '/hk01/channel/:id' },
-            { title: 'issue', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/issue/:id/:title', target: '/hk01/issue/:id' },
-            { title: 'tag', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/tag/:id/:title', target: '/hk01/tag/:id' },
-        ],
-    },
+    // 'hk01.com': {
+    //     _name: '香港01',
+    //     www: [
+    //         { title: '最 Hit', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: ['/hot', '/'], target: '/hk01/hot' },
+    //         { title: 'zone', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/zone/:id/:title', target: '/hk01/zone/:id' },
+    //         { title: 'channel', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/channel/:id/:title', target: '/hk01/channel/:id' },
+    //         { title: 'issue', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/issue/:id/:title', target: '/hk01/issue/:id' },
+    //         { title: 'tag', docs: 'https://docs.rsshub.app/traditional-media.html#xiang-gang-01', source: '/tag/:id/:title', target: '/hk01/tag/:id' },
+    //     ],
+    // },
     'douban.com': {
         _name: '豆瓣',
         www: [
@@ -808,13 +744,6 @@
                 source: '/nppa/contents/:channel/:content',
                 target: (params, url) => `/gov/nppa/${/nppa\/contents\/(\d+\/\d+)\.shtml/.exec(url)[1]}`,
             },
-        ],
-    },
-    'acfun.cn': {
-        _name: 'AcFun',
-        www: [
-            { tilte: '番剧', docs: 'https://docs.rsshub.app/anime.html#acfun-fan-ju', source: '/bangumi/:id', target: (params) => `/acfun/bangumi/${params.id.replace('aa', '')}` },
-            { title: '用户投稿', docs: 'https://docs.rsshub.app/anime.html#acfun-yong-hu-tou-gao', source: '/u/:id', target: '/acfun/user/video/:id' },
         ],
     },
     'jjmhw.cc': { _name: '漫小肆', www: [{ title: '漫画更新', docs: 'https://docs.rsshub.app/anime.html#man-xiao-si', source: '/book/:id', target: '/manxiaosi/book/:id' }] },
@@ -976,15 +905,6 @@
             { title: '日记评论区', docs: 'https://docs.rsshub.app/social-media.html#fur-affinity', source: '/journal/:id/', target: '/furaffinity/journal_comments/:id' },
         ],
     },
-    'gcores.com': {
-        _name: '机核网',
-        www: [
-            { title: '资讯', docs: 'https://docs.rsshub.app/program-update.html#eagle', source: '/news', target: '/gcores/category/news' },
-            { title: '视频', docs: 'https://docs.rsshub.app/program-update.html#eagle', source: '/videos', target: '/gcores/category/videos' },
-            { title: '电台', docs: 'https://docs.rsshub.app/program-update.html#eagle', source: '/radios', target: '/gcores/category/radios' },
-            { title: '文章', docs: 'https://docs.rsshub.app/program-update.html#eagle', source: '/articles', target: '/gcores/category/articles' },
-        ],
-    },
     'bgm.tv': {
         _name: 'Bangumi',
         '.': [
@@ -1026,7 +946,7 @@
         mob: [{ title: '分区', docs: 'https://docs.rsshub.app/game.html#lv-fa-shi-ying-di', source: '/fine/:tag', target: '/lfsyd/tag/:tag' }],
     },
     'macwk.com': { _name: 'MacWk', '.': [{ title: '应用更新', docs: 'https://docs.rsshub.app/program-update.html#macwk', source: '/soft/:name', target: '/macwk/soft/:name' }] },
-    'zyshow.net': { www: [{ title: '', docs: 'https://docs.rsshub.app/game.html#lv-fa-shi-ying-di', source: '/:name/', target: '/zyshow/:name' }] },
+    // 'zyshow.net': { www: [{ title: '', docs: 'https://docs.rsshub.app/game.html#lv-fa-shi-ying-di', source: '/:name/', target: '/zyshow/:name' }] },
     'foreverblog.cn': {
         _name: 'foreverblog',
         www: [
