@@ -502,6 +502,9 @@
     "/baai/hub/:tagId?/:sort?/:range?": [
         "TonyRL"
     ],
+    "/bad/:path+": [
+        "nczitzk"
+    ],
     "/baidu/gushitong/index": [
         "CaoMeiYouRen"
     ],
@@ -1155,7 +1158,8 @@
         "Fatpandac"
     ],
     "/cnki/author/:code": [
-        "harveyqiu"
+        "harveyqiu",
+        "Derekmini"
     ],
     "/cntheory/paper/:id?": [
         "nczitzk"
@@ -1172,6 +1176,9 @@
     ],
     "/coindesk/consensus-magazine": [
         "jameshih"
+    ],
+    "/comicat/search/:keyword": [
+        "Cyang39"
     ],
     "/comicskingdom/:name": [
         "stjohnjohnson"
@@ -1387,7 +1394,7 @@
     "/diershoubing/news": [
         "wushijishan"
     ],
-    "/discord/channel/:channelID": [
+    "/discord/channel/:channelId": [
         "TonyRL"
     ],
     "/disinfo/publications": [
@@ -3757,6 +3764,9 @@
     "/nogizaka46/blog": [
         "Kasper4649"
     ],
+    "/notion/database/:databaseId": [
+        "curly210102"
+    ],
     "/now/news/:category?/:id?": [
         "nczitzk"
     ],
@@ -4985,6 +4995,15 @@
     "/techflowpost/": [
         "nczitzk"
     ],
+    "/techpowerup": [
+        "TonyRL"
+    ],
+    "/techpowerup/": [
+        "TonyRL"
+    ],
+    "/techpowerup/review/:keyword?": [
+        "TonyRL"
+    ],
     "/telecompaper/news/:caty/:year?/:country?/:type?": [
         "nczitzk"
     ],
@@ -5144,6 +5163,9 @@
     ],
     "/tingshuitz/nanjing": [
         "ocleo1"
+    ],
+    "/tingshuitz/shenzhen": [
+        "lilPiper"
     ],
     "/tingshuitz/wuhan": [
         "MoonBegonia"
