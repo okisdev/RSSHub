@@ -158,7 +158,9 @@
   "/3kns/:filters?/:order?": [
     "xzzpig"
   ],
-  "/423down/:category/:type?": [],
+  "/423down/:category{.+}?": [
+    "nczitzk"
+  ],
   "/4gamers/": [
     "TonyRL"
   ],
@@ -197,6 +199,9 @@
   ],
   "/5eplay/article": [
     "Dlouxgit"
+  ],
+  "/69shu/article/:id": [
+    "eternasuno"
   ],
   "/6park/:id?/:type?/:keyword?": [],
   "/6park/news/:site?/:id?/:keyword?": [],
@@ -401,6 +406,11 @@
   "/apkpure/versions/:pkg/:region?": [
     "maple3142"
   ],
+  "/apnews/rss/:rss?": [
+    "zoenglinghou",
+    "mjysci",
+    "TonyRL"
+  ],
   "/apnews/topics/:topic?": [
     "zoenglinghou",
     "mjysci",
@@ -545,8 +555,9 @@
   "/bangumi/tv/group/:id": [
     "SettingDust"
   ],
-  "/bangumi/tv/followrank": [
-    "honue"
+  "/bangumi/:type/followrank": [
+    "honue",
+    "zhoukuncheng"
   ],
   "/bangumi/tv/person/:id": [
     "ylc395"
@@ -1169,8 +1180,18 @@
   "/cnbc/rss/:id?": [
     "TonyRL"
   ],
-  "/cnbeta/:type/:id": [],
-  "/cnbeta/": [],
+  "/cnbeta/category/:id": [
+    "nczitzk"
+  ],
+  "/cnbeta/": [
+    "kt286",
+    "HaitianLiu",
+    "nczitzk"
+  ],
+  "/cnbeta/topics/:id": [
+    "cczhong11",
+    "nczitzk"
+  ],
   "/cnblogs/aggsite/topdiggs": [
     "hujingnb"
   ],
@@ -1341,6 +1362,9 @@
   "/cuc/yz": [
     "niuyi1017"
   ],
+  "/cuilingmag/:category?": [
+    "nczitzk"
+  ],
   "/curiouscat/user/:id": [
     "lucasew"
   ],
@@ -1400,10 +1424,6 @@
   ],
   "/dapenti/tugua": [
     "tgly307"
-  ],
-  "/darwinawards/all": [
-    "zoenglinghou",
-    "nczitzk"
   ],
   "/darwinawards/": [
     "zoenglinghou",
@@ -1489,6 +1509,9 @@
   ],
   "/diershoubing/news": [
     "wushijishan"
+  ],
+  "/digitalcameraworld/news": [
+    "EthanWng97"
   ],
   "/discord/channel/:channelId": [
     "TonyRL"
@@ -2489,6 +2512,9 @@
   "/gov/zj/search/:websiteid?/:word/:cateid?": [
     "HaoyuLee"
   ],
+  "/gq/news": [
+    "EthanWng97"
+  ],
   "/greasyfork/scripts/:script/feedback": [
     "miles170"
   ],
@@ -2747,9 +2773,9 @@
   "/houxu/events": [
     "nczitzk"
   ],
-  "/houxu/featured": [],
-  "/houxu/index": [],
-  "/houxu/": [],
+  "/houxu/": [
+    "nczitzk"
+  ],
   "/houxu/lives/:id": [
     "nczitzk"
   ],
@@ -3291,7 +3317,10 @@
   "/kepu/live": [
     "nczitzk"
   ],
-  "/keylol*": [],
+  "/keylol/:path": [
+    "nczitzk",
+    "kennyfong19931"
+  ],
   "/kimlaw/thesis": [
     "TonyRL"
   ],
@@ -3467,6 +3496,9 @@
   "/lovelive-anime/schedules/:serie?/:category?": [],
   "/lovelive-anime/topics/:abbr/:category?/:option?": [
     "axojhf"
+  ],
+  "/lrepacks/:category?": [
+    "nczitzk"
   ],
   "/lsnu/jiaowc/tzgg/:category?": [
     "nyaShine"
@@ -3771,9 +3803,15 @@
   "/nbd/:id?": [
     "nczitzk"
   ],
-  "/nber/papers": [],
-  "/nber/news": [],
-  "/ncc-cma/cmdp/image/:id{.+}?": [],
+  "/nber/papers": [
+    "5upernova-heng"
+  ],
+  "/nber/new": [
+    "5upernova-heng"
+  ],
+  "/ncc-cma/cmdp/image/:id{.+}?": [
+    "nczitzk"
+  ],
   "/ncepu/master/:type": [
     "nilleo"
   ],
@@ -3824,6 +3862,9 @@
   ],
   "/newsmarket/:category?": [
     "nczitzk"
+  ],
+  "/newyorker/:category/:subCategory?": [
+    "EthanWng97"
   ],
   "/newzmz/:id?/:downLinkType?": [
     "nczitzk"
@@ -4082,6 +4123,9 @@
     "Seiry",
     "Xm798"
   ],
+  "/nudt/yjszs/:type?": [
+    "Blank0120"
+  ],
   "/nuist/bulletin/:category?": [
     "gylidian"
   ],
@@ -4276,19 +4320,22 @@
     "cxumol",
     "nczitzk"
   ],
+  "/p-articles/contributors/:author": [
+    "Insomnia1437"
+  ],
+  "/p-articles/section/:section": [
+    "Insomnia1437"
+  ],
   "/panewslab/author/:id": [
     "nczitzk"
   ],
   "/panewslab/column/:id": [
     "nczitzk"
   ],
-  "/panewslab/:category?": [
-    "nczitzk"
-  ],
   "/panewslab/news": [
     "nczitzk"
   ],
-  "/panewslab/newsflash": [
+  "/panewslab/profundity/:category?": [
     "nczitzk"
   ],
   "/panewslab/topic/:id": [
@@ -4467,25 +4514,25 @@
     "TonyRL"
   ],
   "/pnas/:topicPath{.+}?": [],
-  "/pornhub/:language?/category_url/:url?": [
+  "/pornhub/category_url/:url?/:language?": [
     "I2IMk",
     "queensferryme"
   ],
   "/pornhub/category/:caty": [
     "nczitzk"
   ],
-  "/pornhub/:language?/model/:username/:sort?": [
+  "/pornhub/model/:username/:language?/:sort?": [
     "I2IMk",
     "queensferryme"
   ],
-  "/pornhub/:language?/pornstar/:username/:sort?": [
+  "/pornhub/pornstar/:username/:language?/:sort?": [
     "I2IMk",
     "queensferryme"
   ],
   "/pornhub/search/:keyword": [
     "nczitzk"
   ],
-  "/pornhub/:language?/users/:username": [
+  "/pornhub/users/:username/:language?": [
     "I2IMk",
     "queensferryme"
   ],
@@ -4610,6 +4657,9 @@
   ],
   "/qq/ac/comic/:id?": [],
   "/qq/ac/rank/:type?/:time?": [
+    "nczitzk"
+  ],
+  "/qq/cfhd/news/:category?": [
     "nczitzk"
   ],
   "/qq/fact": [
@@ -5080,6 +5130,9 @@
   "/sjtu/yzb/zkxx/:type": [
     "stdrc"
   ],
+  "/sketis/isabelle-dev/blog/:blog": [
+    "Ritsuka314"
+  ],
   "/skysports/news/:team": [
     "nczitzk"
   ],
@@ -5418,9 +5471,6 @@
   "/techflowpost/express": [
     "nczitzk"
   ],
-  "/techflowpost/newsflash": [
-    "nczitzk"
-  ],
   "/techflowpost/": [
     "nczitzk"
   ],
@@ -5474,19 +5524,10 @@
     "DIYgod",
     "NeverBehave"
   ],
-  "/tfc-taiwan/": [
+  "/tfc-taiwan/:type?": [
     "TonyRL"
   ],
-  "/tfc-taiwan/category/:id{.+}": [
-    "TonyRL"
-  ],
-  "/tfc-taiwan/info": [
-    "TonyRL"
-  ],
-  "/tfc-taiwan/report": [
-    "TonyRL"
-  ],
-  "/tfc-taiwan/topic/:id": [
+  "/tfc-taiwan/:type/:id{.+}": [
     "TonyRL"
   ],
   "/tgbus/list/:category": [
@@ -5679,6 +5720,9 @@
   "/trow/portal": [
     "shiningdracon"
   ],
+  "/tsinghua/lib/zydt/:category?": [
+    "nczitzk"
+  ],
   "/ttv/:category?": [
     "dzx-dzx"
   ],
@@ -5746,6 +5790,9 @@
   ],
   "/typora/changelog": [
     "cnzgray"
+  ],
+  "/typst/universe": [
+    "HPDell"
   ],
   "/u3c3/search/:keyword/:preview?": [
     "storytellerF"
@@ -6104,6 +6151,9 @@
   ],
   "/whu/hyxt/:category{.+}?": [],
   "/whu/news/:category{.+}?": [],
+  "/whu/rsgis/:type/:sub?": [
+    "HPDell"
+  ],
   "/whu/gs/:type?": [
     "Delreyaa"
   ],
@@ -6123,14 +6173,14 @@
   "/wmpvp/news/:type": [
     "tssujt"
   ],
+  "/wnacg/category/:cid": [
+    "Gandum2077"
+  ],
   "/wnacg/": [
     "KenMizz"
   ],
-  "/wnacg/category/:cid": [
-    "KenMizz"
-  ],
   "/wnacg/tag/:tag": [
-    "KenMizz"
+    "Gandum2077"
   ],
   "/wordpress/:url?/:filter{.+}?": [
     "nczitzk"
@@ -6339,6 +6389,12 @@
     "TonyRL"
   ],
   "/yahoo/news/en/:category?": [],
+  "/yamibo/bbs/forum/:fid/:type?": [
+    "KarasuShin"
+  ],
+  "/yamibo/bbs/thread/:tid": [
+    "KarasuShin"
+  ],
   "/yande/post/popular_recent/:period?": [
     "fashioncj"
   ],

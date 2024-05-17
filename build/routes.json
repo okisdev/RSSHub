@@ -1480,15 +1480,187 @@
   },
   "423down": {
     "routes": {
-      "/:category/:type?": {
-        "path": "/:category/:type?",
-        "name": "Unknown",
-        "maintainers": [],
+      "/:category{.+}?": {
+        "path": "/:category{.+}?",
+        "name": "423Down",
+        "url": "423down.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/423down",
+        "parameters": {
+          "category": "分类，默认为首页，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [Android - 423Down](https://www.423down.com/apk)，网址为 `https://www.423down.com/apk`。截取 `https://www.423down.com/` 到末尾的部分 `apk` 作为参数填入，此时路由为 [`/423down/apk`](https://rsshub.app/423down/apk)。\n  :::\n\n  #### [安卓软件](https://www.423down.com/apk)\n\n  | [安卓软件](https://www.423down.com/apk) |\n  | --------------------------------------- |\n  | [apk](https://rsshub.app/423down/apk)   |\n  \n  #### 电脑软件\n  \n  | [原创软件](https://www.423down.com/zd423) | [媒体播放](https://www.423down.com/multimedia)      | [网页浏览](https://www.423down.com/browser)   | [图形图像](https://www.423down.com/image) | [聊天软件](https://www.423down.com/im) |\n  | ----------------------------------------- | --------------------------------------------------- | --------------------------------------------- | ----------------------------------------- | -------------------------------------- |\n  | [zd423](https://rsshub.app/423down/zd423) | [multimedia](https://rsshub.app/423down/multimedia) | [browser](https://rsshub.app/423down/browser) | [image](https://rsshub.app/423down/image) | [im](https://rsshub.app/423down/im)    |\n  \n  | [办公软件](https://www.423down.com/work) | [上传下载](https://www.423down.com/down) | [实用软件](https://www.423down.com/softtool)    | [系统辅助](https://www.423down.com/systemsoft)      | [系统必备](https://www.423down.com/systemplus)      |\n  | ---------------------------------------- | ---------------------------------------- | ----------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |\n  | [work](https://rsshub.app/423down/work)  | [down](https://rsshub.app/423down/down)  | [softtool](https://rsshub.app/423down/softtool) | [systemsoft](https://rsshub.app/423down/systemsoft) | [systemplus](https://rsshub.app/423down/systemplus) |\n  \n  | [安全软件](https://www.423down.com/security)    | [补丁相关](https://www.423down.com/patch) | [硬件相关](https://www.423down.com/hardware)    |\n  | ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------- |\n  | [security](https://rsshub.app/423down/security) | [patch](https://rsshub.app/423down/patch) | [hardware](https://rsshub.app/423down/hardware) |\n  \n  #### 操作系统\n  \n  | [Windows 11](https://www.423down.com/win11) | [Windows 10](https://www.423down.com/win10) | [Windows 7](https://www.423down.com/win7) | [Windows XP](https://www.423down.com/win7/winxp)    | [WinPE](https://www.423down.com/pe-system)        |\n  | ------------------------------------------- | ------------------------------------------- | ----------------------------------------- | --------------------------------------------------- | ------------------------------------------------- |\n  | [win11](https://rsshub.app/423down/win11)   | [win10](https://rsshub.app/423down/win10)   | [win7](https://rsshub.app/423down/win7)   | [win7/winxp](https://rsshub.app/423down/win7/winxp) | [pe-system](https://rsshub.app/423down/pe-system) |\n  ",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "423down.com/:category",
+              "423down.com"
+            ]
+          },
+          {
+            "title": "首页",
+            "source": [
+              "www.423down.com"
+            ],
+            "target": "/"
+          },
+          {
+            "title": "安卓软件",
+            "source": [
+              "www.423down.com/apk"
+            ],
+            "target": "/apk"
+          },
+          {
+            "title": "电脑软件 - 原创软件",
+            "source": [
+              "www.423down.com/zd423"
+            ],
+            "target": "/zd423"
+          },
+          {
+            "title": "电脑软件 - 媒体播放",
+            "source": [
+              "www.423down.com/multimedia"
+            ],
+            "target": "/multimedia"
+          },
+          {
+            "title": "电脑软件 - 网页浏览",
+            "source": [
+              "www.423down.com/browser"
+            ],
+            "target": "/browser"
+          },
+          {
+            "title": "电脑软件 - 图形图像",
+            "source": [
+              "www.423down.com/image"
+            ],
+            "target": "/image"
+          },
+          {
+            "title": "电脑软件 - 聊天软件",
+            "source": [
+              "www.423down.com/im"
+            ],
+            "target": "/im"
+          },
+          {
+            "title": "电脑软件 - 办公软件",
+            "source": [
+              "www.423down.com/work"
+            ],
+            "target": "/work"
+          },
+          {
+            "title": "电脑软件 - 上传下载",
+            "source": [
+              "www.423down.com/down"
+            ],
+            "target": "/down"
+          },
+          {
+            "title": "电脑软件 - 实用软件",
+            "source": [
+              "www.423down.com/softtool"
+            ],
+            "target": "/softtool"
+          },
+          {
+            "title": "电脑软件 - 系统辅助",
+            "source": [
+              "www.423down.com/systemsoft"
+            ],
+            "target": "/systemsoft"
+          },
+          {
+            "title": "电脑软件 - 系统必备",
+            "source": [
+              "www.423down.com/systemplus"
+            ],
+            "target": "/systemplus"
+          },
+          {
+            "title": "电脑软件 - 安全软件",
+            "source": [
+              "www.423down.com/security"
+            ],
+            "target": "/security"
+          },
+          {
+            "title": "电脑软件 - 补丁相关",
+            "source": [
+              "www.423down.com/patch"
+            ],
+            "target": "/patch"
+          },
+          {
+            "title": "电脑软件 - 硬件相关",
+            "source": [
+              "www.423down.com/hardware"
+            ],
+            "target": "/hardware"
+          },
+          {
+            "title": "操作系统 - Windows 11",
+            "source": [
+              "www.423down.com/win11"
+            ],
+            "target": "/win11"
+          },
+          {
+            "title": "操作系统 - Windows 10",
+            "source": [
+              "www.423down.com/win10"
+            ],
+            "target": "/win10"
+          },
+          {
+            "title": "操作系统 - Windows 7",
+            "source": [
+              "www.423down.com/win7"
+            ],
+            "target": "/win7"
+          },
+          {
+            "title": "操作系统 - Windows XP",
+            "source": [
+              "www.423down.com/win7/winxp"
+            ],
+            "target": "/win7/winxp"
+          },
+          {
+            "title": "操作系统 - WinPE",
+            "source": [
+              "www.423down.com/pe-system"
+            ],
+            "target": "/pe-system"
+          }
+        ],
         "location": "index.ts"
       }
     },
     "name": "423Down",
-    "url": "www.423down.com"
+    "url": "423down.com",
+    "categories": [
+      "program-update"
+    ],
+    "description": ""
   },
   "4gamers": {
     "routes": {
@@ -1847,6 +2019,44 @@
     },
     "name": "5EPLAY",
     "url": "csgo.5eplay.com"
+  },
+  "69shu": {
+    "routes": {
+      "/article/:id": {
+        "path": "/article/:id",
+        "name": "章节",
+        "url": "www.69shu.top",
+        "maintainers": [
+          "eternasuno"
+        ],
+        "example": "/article/47117",
+        "parameters": {
+          "id": "小说 id, 可在对应小说页 URL 中找到"
+        },
+        "categories": [
+          "reading"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.69shu.top/book/:id.htm"
+            ],
+            "target": "/article/:id"
+          }
+        ],
+        "location": "article.ts"
+      }
+    },
+    "name": "69书吧",
+    "url": "69shu.top"
   },
   "6park": {
     "routes": {
@@ -4037,6 +4247,39 @@
   },
   "apnews": {
     "routes": {
+      "/rss/:rss?": {
+        "path": "/rss/:rss?",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/apnews/rss/business",
+        "parameters": {
+          "rss": "Route name from the first segment of the corresponding site, or `index` for the front page(default)."
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "apnews.com/:rss"
+            ],
+            "target": "/rss/:rss"
+          }
+        ],
+        "name": "RSS",
+        "maintainers": [
+          "zoenglinghou",
+          "mjysci",
+          "TonyRL"
+        ],
+        "location": "rss.ts"
+      },
       "/topics/:topic?": {
         "path": "/topics/:topic?",
         "categories": [
@@ -5465,13 +5708,15 @@
         ],
         "location": "tv/group/topic.ts"
       },
-      "/tv/followrank": {
-        "path": "/tv/followrank",
+      "/:type/followrank": {
+        "path": "/:type/followrank",
         "categories": [
           "anime"
         ],
-        "example": "/bangumi/tv/followrank",
-        "parameters": {},
+        "example": "/bangumi/anime/followrank",
+        "parameters": {
+          "type": "类型：anime - 动画, book - 图书, music - 音乐, game - 游戏, real - 三次元"
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -5483,15 +5728,16 @@
         "radar": [
           {
             "source": [
-              "bgm.tv/anime"
-            ]
+              "bgm.tv/:type"
+            ],
+            "target": "/:type/followrank"
           }
         ],
-        "name": "成员关注动画榜",
+        "name": "成员关注榜",
         "maintainers": [
-          "honue"
+          "honue",
+          "zhoukuncheng"
         ],
-        "url": "bgm.tv/anime",
         "location": "tv/other/followrank.ts"
       },
       "/tv/person/:id": {
@@ -11819,45 +12065,80 @@
   },
   "cnbeta": {
     "routes": {
-      "/:type/:id": {
+      "/category/:id": {
+        "name": "分类",
         "path": [
-          "/:type/:id",
-          "/"
+          "/category/:id"
         ],
+        "example": "/cnbeta/category/movie",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "parameters": {
+          "id": "分类 id，可在对应分类页的 URL 中找到"
+        },
         "radar": [
           {
             "source": [
-              "cnbeta.com.tw/"
-            ],
-            "target": ""
+              "cnbeta.com.tw/category/:id"
+            ]
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "url": "cnbeta.com.tw/",
-        "location": "type.ts"
+        "url": "cnbeta.com.tw",
+        "description": "| 影视  | 音乐  | 游戏 | 动漫  | 趣闻  | 科学    | 软件 |\n  | ----- | ----- | ---- | ----- | ----- | ------- | ---- |\n  | movie | music | game | comic | funny | science | soft |",
+        "location": "category.ts"
       },
       "/": {
+        "name": "头条资讯",
         "path": [
-          "/:type/:id",
           "/"
         ],
+        "example": "/cnbeta",
         "radar": [
           {
             "source": [
               "cnbeta.com.tw/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "url": "cnbeta.com.tw/",
-        "location": "type.ts"
+        "maintainers": [
+          "kt286",
+          "HaitianLiu",
+          "nczitzk"
+        ],
+        "url": "cnbeta.com.tw",
+        "location": "index.ts"
+      },
+      "/topics/:id": {
+        "name": "主题",
+        "path": [
+          "/topics/:id"
+        ],
+        "example": "/cnbeta/topics/453",
+        "maintainers": [
+          "cczhong11",
+          "nczitzk"
+        ],
+        "parameters": {
+          "id": "主题 id，可在对应主题页的 URL 中找到"
+        },
+        "radar": [
+          {
+            "source": [
+              "cnbeta.com.tw/topics/:id"
+            ]
+          }
+        ],
+        "url": "cnbeta.com.tw",
+        "description": "::: tip\n完整的主题列表参见 [主题列表](https://www.cnbeta.com.tw/topics.htm)\n:::",
+        "location": "topics.ts"
       }
     },
     "name": "cnBeta.COM",
-    "url": "cnbeta.com.tw"
+    "url": "cnbeta.com.tw",
+    "categories": [
+      "new-media"
+    ]
   },
   "cnblogs": {
     "routes": {
@@ -11893,7 +12174,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/topdiggs",
+        "url": "www.cnblogs.com/aggsite/headline",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -11929,7 +12210,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/topdiggs",
+        "url": "www.cnblogs.com/aggsite/headline",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -11965,7 +12246,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/topdiggs",
+        "url": "www.cnblogs.com/aggsite/headline",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -12001,7 +12282,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/topdiggs",
+        "url": "www.cnblogs.com/aggsite/headline",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -12037,7 +12318,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/topdiggs",
+        "url": "www.cnblogs.com/aggsite/headline",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       }
@@ -13825,6 +14106,98 @@
     "name": "中国传媒大学",
     "url": "yz.cuc.edu.cn"
   },
+  "cuilingmag": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "name": "分类",
+        "url": "cuilingmag.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/cuilingmag",
+        "parameters": {
+          "category": "分类，默认为空，即全部，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [#哲学·文明](https://www.cuilingmag.com/category/philosophy_civilization)，网址为 `https://www.cuilingmag.com/category/philosophy_civilization`。截取 `https://www.cuilingmag.com/category` 到末尾的部分 `philosophy_civilization` 作为参数填入，此时路由为 [`/cuilingmag/philosophy_civilization`](https://rsshub.app/cuilingmag/philosophy_civilization)。\n  :::\n\n  | 分类                                                                       | ID                                                                                |\n  | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |\n  | [哲学 · 文明](https://www.cuilingmag.com/category/philosophy_civilization) | [philosophy_civilization](https://rsshub.app/cuilingmag/philosophy_civilization) |\n  | [艺术 · 科技](https://www.cuilingmag.com/category/art_science)             | [art_science](https://rsshub.app/cuilingmag/art_science)                         |\n  | [未来 · 生命](https://www.cuilingmag.com/category/future_life)             | [future_life](https://rsshub.app/cuilingmag/future_life)                         |\n  | [行星智慧](https://www.cuilingmag.com/category/planetary_wisdom)           | [planetary_wisdom](https://rsshub.app/cuilingmag/planetary_wisdom)               |\n  | [数字治理](https://www.cuilingmag.com/category/digital_governance)         | [digital_governance](https://rsshub.app/cuilingmag/digital_governance)           |\n  | [Noema精选](https://www.cuilingmag.com/category/selected_noema)            | [selected_noema](https://rsshub.app/cuilingmag/selected_noema)                   |\n  ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "cuilingmag.com/category/:category"
+            ]
+          },
+          {
+            "title": "全部",
+            "source": [
+              "cuilingmag.com"
+            ],
+            "target": "/"
+          },
+          {
+            "title": "哲学 · 文明",
+            "source": [
+              "cuilingmag.com/category/philosophy_civilization"
+            ],
+            "target": "/philosophy_civilization"
+          },
+          {
+            "title": "艺术 · 科技",
+            "source": [
+              "cuilingmag.com/category/art_science"
+            ],
+            "target": "/art_science"
+          },
+          {
+            "title": "未来 · 生命",
+            "source": [
+              "cuilingmag.com/category/future_life"
+            ],
+            "target": "/future_life"
+          },
+          {
+            "title": "行星智慧",
+            "source": [
+              "cuilingmag.com/category/planetary_wisdom"
+            ],
+            "target": "/planetary_wisdom"
+          },
+          {
+            "title": "数字治理",
+            "source": [
+              "cuilingmag.com/category/digital_governance"
+            ],
+            "target": "/digital_governance"
+          },
+          {
+            "title": "Noema精选",
+            "source": [
+              "cuilingmag.com/category/selected_noema"
+            ],
+            "target": "/selected_noema"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "萃嶺网",
+    "url": "cuilingmag.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
+  },
   "curiouscat": {
     "routes": {
       "/user/:id": {
@@ -14364,43 +14737,18 @@
   },
   "darwinawards": {
     "routes": {
-      "/all": {
-        "path": [
-          "/all",
-          "/"
-        ],
-        "radar": [
-          {
-            "source": [
-              "darwinawards.com/darwin",
-              "darwinawards.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "zoenglinghou",
-          "nczitzk"
-        ],
-        "url": "darwinawards.com/darwin",
-        "location": "index.ts"
-      },
       "/": {
-        "path": [
-          "/all",
-          "/"
-        ],
+        "name": "Award Winners",
+        "example": "/darwinawards",
+        "path": "/",
         "radar": [
           {
             "source": [
               "darwinawards.com/darwin",
               "darwinawards.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
         "maintainers": [
           "zoenglinghou",
           "nczitzk"
@@ -14410,7 +14758,10 @@
       }
     },
     "name": "Darwin Awards",
-    "url": "darwinawards.com"
+    "url": "darwinawards.com",
+    "categories": [
+      "other"
+    ]
   },
   "dayanzai": {
     "routes": {
@@ -14821,12 +15172,14 @@
         "maintainers": [
           "tensor-tech"
         ],
-        "radar": {
-          "source": [
-            "bbs.deepin.org/user/:user_id"
-          ],
-          "target": "/homepage/:user_id"
-        },
+        "radar": [
+          {
+            "source": [
+              "bbs.deepin.org/user/:user_id"
+            ],
+            "target": "/homepage/:user_id"
+          }
+        ],
         "location": "homepage.ts"
       }
     },
@@ -15254,6 +15607,40 @@
     "name": "二柄 APP",
     "url": "diershoubing.com"
   },
+  "digitalcameraworld": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/digitalcameraworld/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "digitalcameraworld.com/"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "EthanWng97"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "Digital Camera World",
+    "url": "digitalcameraworld.com"
+  },
   "discord": {
     "routes": {
       "/channel/:channelId": {
@@ -15674,76 +16061,57 @@
   "dnaindia": {
     "routes": {
       "/:category": {
-        "path": [
-          "/:category",
-          "/topic/:topic"
+        "name": "News",
+        "maintainers": [
+          "Rjnishant530"
         ],
-        "categories": [
-          "traditional-media"
+        "path": [
+          "/:category"
         ],
         "example": "/dnaindia/headlines",
         "parameters": {
           "category": "Find it in the URL, or tables below"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
-              "dnaindia.com/:category"
+              "www.dnaindia.com/:category"
             ]
           }
         ],
-        "name": "News",
-        "maintainers": [
-          "Rjnishant530"
-        ],
-        "description": "Categories:\n\n  | Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |\n  | --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |\n  | headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |",
-        "location": "category.ts"
+        "url": "www.dnaindia.com",
+        "description": "Categories:\n\n| Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |\n| --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |\n| headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |",
+        "location": "news.ts"
       },
       "/topic/:topic": {
+        "name": "Topic",
+        "maintainers": [
+          "Rjnishant530"
+        ],
         "path": [
-          "/:category",
           "/topic/:topic"
         ],
-        "categories": [
-          "traditional-media"
-        ],
-        "example": "/dnaindia/headlines",
+        "example": "/dnaindia/topic/dna-verified",
         "parameters": {
-          "category": "Find it in the URL, or tables below"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+          "category": "Find it in the URL"
         },
         "radar": [
           {
             "source": [
-              "dnaindia.com/:category"
+              "www.dnaindia.com/topic/:topic"
             ]
           }
         ],
-        "name": "News",
-        "maintainers": [
-          "Rjnishant530"
-        ],
-        "description": "Categories:\n\n  | Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |\n  | --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |\n  | headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |",
-        "location": "category.ts"
+        "url": "www.dnaindia.com",
+        "description": "Topics:\n\n| DNA verified |\n| ------------ |\n| dna-verified |\n\n:::tip\nThe URL of the form `https://www.dnaindia.com/topic/dna-verified` demonstrates the utilization of the subdomain `topic`.\n:::",
+        "location": "topic.ts"
       }
     },
     "name": "DNA India",
-    "url": "dnaindia.com"
+    "url": "dnaindia.com",
+    "categories": [
+      "traditional-media"
+    ]
   },
   "dockerhub": {
     "routes": {
@@ -18781,7 +19149,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "farmatters.com/exclusive",
+        "url": "farmatters.com/news",
         "location": "index.ts"
       },
       "/news/:locale?": {
@@ -18818,7 +19186,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "farmatters.com/exclusive",
+        "url": "farmatters.com/news",
         "location": "index.ts"
       },
       "/:locale?": {
@@ -18855,7 +19223,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "farmatters.com/exclusive",
+        "url": "farmatters.com/news",
         "location": "index.ts"
       },
       "/:type/:id/:locale?": {
@@ -18892,12 +19260,15 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "farmatters.com/exclusive",
+        "url": "farmatters.com/news",
         "location": "index.ts"
       }
     },
     "name": "Farmatters",
-    "url": "farmatters.com"
+    "url": "farmatters.com",
+    "categories": [
+      "new-media"
+    ]
   },
   "fastbull": {
     "routes": {
@@ -24906,6 +25277,40 @@
     ],
     "description": "<details>\n  <summary>*业务咨询* 和 *投诉建议* 可用的站点参数</summary>\n\n  | 上海市   | 北京市  | 天津市  | 河北省 |\n  | -------- | ------- | ------- | ------ |\n  | shanghai | beijing | tianjin | hebei  |\n\n  | 山西省 | 内蒙古自治区 | 辽宁省   | 吉林省 |\n  | ------ | ------------ | -------- | ------ |\n  | shanxi | neimenggu    | liaoning | jilin  |\n\n  | 黑龙江省     | 江苏省  | 浙江省   | 安徽省 |\n  | ------------ | ------- | -------- | ------ |\n  | heilongjiang | jiangsu | zhejiang | anhui  |\n\n  | 福建省 | 江西省  | 山东省   | 河南省 |\n  | ------ | ------- | -------- | ------ |\n  | fujian | jiangxi | shandong | henan  |\n\n  | 湖北省 | 湖南省 | 广东省    | 广西壮族自治区 |\n  | ------ | ------ | --------- | -------------- |\n  | hubei  | hunan  | guangdong | guangxi        |\n\n  | 海南省 | 重庆市    | 四川省  | 贵州省  |\n  | ------ | --------- | ------- | ------- |\n  | hainan | chongqing | sichuan | guizhou |\n\n  | 云南省 | 西藏自治区 | 陕西省  | 甘肃省 |\n  | ------ | ---------- | ------- | ------ |\n  | yunnan | xizang     | shaanxi | gansu  |\n\n  | 青海省  | 宁夏回族自治区 | 新疆维吾尔自治区 | 大连市 |\n  | ------- | -------------- | ---------------- | ------ |\n  | qinghai | ningxia        | xinjiang         | dalian |\n\n  | 宁波市 | 厦门市 | 青岛市  | 深圳市   |\n  | ------ | ------ | ------- | -------- |\n  | ningbo | xiamen | qingdao | shenzhen |\n</details>"
   },
+  "gq": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/gq/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gq.com/"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "EthanWng97"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "GQ",
+    "url": "gq.com"
+  },
   "greasyfork": {
     "routes": {
       "/scripts/:script/feedback": {
@@ -25409,7 +25814,7 @@
         "categories": [
           "shopping"
         ],
-        "example": "/guangdiu/search/k=百度网盘",
+        "example": "/guangdiu/search/q=百度网盘",
         "parameters": {
           "query": "链接参数，对应网址问号后的内容"
         },
@@ -27351,15 +27756,6 @@
           "new-media"
         ],
         "example": "/houxu/events",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -27375,60 +27771,20 @@
         "url": "houxu.app/events",
         "location": "events.ts"
       },
-      "/featured": {
-        "path": [
-          "/featured",
-          "/index",
-          "/"
-        ],
-        "radar": [
-          {
-            "source": [
-              "houxu.app/"
-            ],
-            "target": ""
-          }
-        ],
-        "name": "Unknown",
-        "maintainers": [],
-        "url": "houxu.app/",
-        "location": "index.ts"
-      },
-      "/index": {
-        "path": [
-          "/featured",
-          "/index",
-          "/"
-        ],
-        "radar": [
-          {
-            "source": [
-              "houxu.app/"
-            ],
-            "target": ""
-          }
-        ],
-        "name": "Unknown",
-        "maintainers": [],
-        "url": "houxu.app/",
-        "location": "index.ts"
-      },
       "/": {
-        "path": [
-          "/featured",
-          "/index",
-          "/"
+        "name": "热点",
+        "maintainers": [
+          "nczitzk"
         ],
+        "example": "/houxu",
+        "path": "/",
         "radar": [
           {
             "source": [
               "houxu.app/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
         "url": "houxu.app/",
         "location": "index.ts"
       },
@@ -27470,15 +27826,6 @@
           "new-media"
         ],
         "example": "/houxu/memory",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -32856,10 +33203,28 @@
   },
   "keylol": {
     "routes": {
-      "*": {
-        "path": "*",
-        "name": "Unknown",
-        "maintainers": [],
+      "/:path": {
+        "path": "/:path",
+        "name": "论坛",
+        "parameters": {
+          "path": "路径，默认为热点聚焦"
+        },
+        "categories": [
+          "game"
+        ],
+        "example": "/keylol/f161-1",
+        "radar": [
+          {
+            "source": [
+              "keylol.com/:path"
+            ]
+          }
+        ],
+        "maintainers": [
+          "nczitzk",
+          "kennyfong19931"
+        ],
+        "description": ":::tip\n  若订阅 [热点聚焦](https://keylol.com/f161-1)，网址为 `https://keylol.com/f161-1`。截取 `https://keylol.com/` 到末尾的部分 `f161-1` 作为参数，此时路由为 [`/keylol/f161-1`](https://rsshub.app/keylol/f161-1)。\n  若订阅子分类 [试玩免费 - 热点聚焦](https://keylol.com/forum.php?mod=forumdisplay&fid=161&filter=typeid&typeid=459)，网址为 `https://keylol.com/forum.php?mod=forumdisplay&fid=161&filter=typeid&typeid=459`。提取`fid`及`typeid` 作为参数，此时路由为 [`/keylol/fid=161&typeid=459`](https://rsshub.app/keylol/fid=161&typeid=459)。注意不要包括`filter`，会调用[全局的内容过滤](https://docs.rsshub.app/guide/parameters#filtering)。\n  :::",
         "location": "index.ts"
       }
     },
@@ -34378,7 +34743,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "logonews.cn/work",
+        "url": "logonews.cn/",
         "description": "如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。",
         "location": "index.ts"
       },
@@ -34399,7 +34764,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "logonews.cn/work",
+        "url": "logonews.cn/",
         "description": "如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。",
         "location": "index.ts"
       },
@@ -34420,7 +34785,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "logonews.cn/work",
+        "url": "logonews.cn/",
         "description": "如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。",
         "location": "index.ts"
       }
@@ -34558,6 +34923,112 @@
     },
     "name": "lovelive-anime",
     "url": "www.lovelive-anime.jp"
+  },
+  "lrepacks": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "name": "REPACK скачать",
+        "url": "lrepacks.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/lrepacks",
+        "parameters": {
+          "category": "Category, Homepage by default"
+        },
+        "description": ":::tip\n  If you subscribe to [Системные программы](https://lrepacks.net/repaki-sistemnyh-programm/)，where the URL is `https://lrepacks.net/repaki-sistemnyh-programm/`, extract the part `https://lrepacks.net/` to the end, which is `repaki-sistemnyh-programm`, and use it as the parameter to fill in. Therefore, the route will be [`/lrepacks/repaki-sistemnyh-programm`](https://rsshub.app/lrepacks/repaki-sistemnyh-programm).\n\n  | Category                                                                        | ID                                                                                           |\n  | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |\n  | [Новые репаки на сегодня](https://lrepacks.net/novye-repaki-elchupacabra/)      | [novye-repaki-elchupacabra](https://rsshub.app/lrepacks/novye-repaki-elchupacabra)           |\n  | [Системные программы](https://lrepacks.net/repaki-sistemnyh-programm/)          | [repaki-sistemnyh-programm](https://rsshub.app/lrepacks/repaki-sistemnyh-programm)           |\n  | [Программы для графики](https://lrepacks.net/repaki-programm-dlya-grafiki/)     | [repaki-programm-dlya-grafiki](https://rsshub.app/lrepacks/repaki-programm-dlya-grafiki)     |\n  | [Программы для интернета](https://lrepacks.net/repaki-programm-dlya-interneta/) | [repaki-programm-dlya-interneta](https://rsshub.app/lrepacks/repaki-programm-dlya-interneta) |\n  | [Мультимедиа программы](https://lrepacks.net/repaki-multimedia-programm/)       | [repaki-multimedia-programm](https://rsshub.app/lrepacks/repaki-multimedia-programm)         |\n  | [Программы для офиса](https://lrepacks.net/repaki-programm-dlya-ofisa/)         | [repaki-programm-dlya-ofisa](https://rsshub.app/lrepacks/repaki-programm-dlya-ofisa)         |\n  | [Разные программы](https://lrepacks.net/repaki-raznyh-programm/)                | [repaki-raznyh-programm](https://rsshub.app/lrepacks/repaki-raznyh-programm)                 |\n  | [Системные библиотеки](https://lrepacks.net/sistemnye-biblioteki/)              | [sistemnye-biblioteki](https://rsshub.app/lrepacks/sistemnye-biblioteki)                     |\n  | [Важная информация](https://lrepacks.net/informaciya/)                          | [informaciya](https://rsshub.app/lrepacks/informaciya)                                       |\n  :::",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "lrepacks.net/:category"
+            ]
+          },
+          {
+            "title": "Новые репаки на сегодня",
+            "source": [
+              "lrepacks.net/novye-repaki-elchupacabra/"
+            ],
+            "target": "/novye-repaki-elchupacabra"
+          },
+          {
+            "title": "Системные программы",
+            "source": [
+              "lrepacks.net/repaki-sistemnyh-programm/"
+            ],
+            "target": "/repaki-sistemnyh-programm"
+          },
+          {
+            "title": "Программы для графики",
+            "source": [
+              "lrepacks.net/repaki-programm-dlya-grafiki/"
+            ],
+            "target": "/repaki-programm-dlya-grafiki"
+          },
+          {
+            "title": "Программы для интернета",
+            "source": [
+              "lrepacks.net/repaki-programm-dlya-interneta/"
+            ],
+            "target": "/repaki-programm-dlya-interneta"
+          },
+          {
+            "title": "Мультимедиа программы",
+            "source": [
+              "lrepacks.net/repaki-multimedia-programm/"
+            ],
+            "target": "/repaki-multimedia-programm"
+          },
+          {
+            "title": "Программы для офиса",
+            "source": [
+              "lrepacks.net/repaki-programm-dlya-ofisa/"
+            ],
+            "target": "/repaki-programm-dlya-ofisa"
+          },
+          {
+            "title": "Разные программы",
+            "source": [
+              "lrepacks.net/repaki-raznyh-programm/"
+            ],
+            "target": "/repaki-raznyh-programm"
+          },
+          {
+            "title": "Системные библиотеки",
+            "source": [
+              "lrepacks.net/sistemnye-biblioteki/"
+            ],
+            "target": "/sistemnye-biblioteki"
+          },
+          {
+            "title": "Важная информация",
+            "source": [
+              "lrepacks.net/informaciya/"
+            ],
+            "target": "/informaciya"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "REPACK скачать",
+    "url": "lrepacks.net",
+    "categories": [
+      "program-update"
+    ],
+    "description": ""
   },
   "lsnu": {
     "routes": {
@@ -37616,21 +38087,13 @@
   "nber": {
     "routes": {
       "/papers": {
-        "path": [
-          "/papers",
-          "/news"
+        "name": "All Papers",
+        "maintainers": [
+          "5upernova-heng"
         ],
-        "categories": [
-          "journal"
-        ],
+        "path": "/papers",
         "example": "/nber/papers",
-        "parameters": {},
         "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
           "supportScihub": true
         },
         "radar": [
@@ -37640,28 +38103,17 @@
             ]
           }
         ],
-        "name": "All Papers",
-        "maintainers": [],
         "url": "nber.org/papers",
-        "description": "Papers that are published in this week.",
-        "location": "index.ts"
+        "location": "all.ts"
       },
-      "/news": {
-        "path": [
-          "/papers",
-          "/news"
+      "/new": {
+        "name": "New Papers",
+        "maintainers": [
+          "5upernova-heng"
         ],
-        "categories": [
-          "journal"
-        ],
-        "example": "/nber/papers",
-        "parameters": {},
+        "path": "/new",
+        "example": "/nber/new",
         "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
           "supportScihub": true
         },
         "radar": [
@@ -37671,27 +38123,313 @@
             ]
           }
         ],
-        "name": "All Papers",
-        "maintainers": [],
         "url": "nber.org/papers",
         "description": "Papers that are published in this week.",
-        "location": "index.ts"
+        "location": "new.ts"
       }
     },
     "name": "National Bureau of Economic Research",
-    "url": "nber.org"
+    "url": "nber.org",
+    "categories": [
+      "journal"
+    ]
   },
   "ncc-cma": {
     "routes": {
       "/cmdp/image/:id{.+}?": {
         "path": "/cmdp/image/:id{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "最新监测",
+        "url": "cmdp.ncc-cma.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/ncc-cma/cmdp/image/RPJQWQYZ",
+        "parameters": {
+          "category": "图片，默认为 RPJQWQYZ，即日平均气温距平，可在对应列表项 data-id 属性中找到"
+        },
+        "description": ":::tip\n  若订阅日平均气温距平，将其 data-id `RPJQWQYZ` 作为参数填入，此时路由为 [`/ncc-cma/cmdp/image/RPJQWQYZ`](https://rsshub.app/ncc-cma/cmdp/image/RPJQWQYZ)。\n\n  若同时订阅日平均气温距平、近5天平均气温距和近10天平均气温距平，将其 data-id `RPJQWQYZ`、`ZJ5TPJQWJP` 和 `ZJ10TQWJP` 作为参数填入，此时路由为 [`/ncc-cma/cmdp/image/RPJQWQYZ/ZJ5TPJQWJP/ZJ10TQWJP`](https://rsshub.app/ncc-cma/cmdp/image/RPJQWQYZ/ZJ5TPJQWJP/ZJ10TQWJP)。\n  :::\n\n  | 日平均气温距平                                              | 近5天平均气温距平                                               | 近10天平均气温距平                                            | 近20天平均气温距平                                            | 近30天平均气温距平                                            |\n  | ----------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |\n  | [RPJQWQYZ](https://rsshub.app/ncc-cma/cmdp/image/RPJQWQYZ) | [ZJ5TPJQWJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ5TPJQWJP) | [ZJ10TQWJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ10TQWJP) | [ZJ20TQWJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ20TQWJP) | [ZJ30TQWJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ30TQWJP) |\n\n  | 本月以来气温距平                                            | 本季以来气温距平                                            | 本年以来气温距平                                            |\n  | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |\n  | [BYYLQWJP](https://rsshub.app/ncc-cma/cmdp/image/BYYLQWJP) | [BJYLQWJP](https://rsshub.app/ncc-cma/cmdp/image/BJYLQWJP) | [BNYLQWJP](https://rsshub.app/ncc-cma/cmdp/image/BNYLQWJP) |\n\n  | 日降水量分布                                                            | 近5天降水量                                                     | 近10天降水量                                                | 近20天降水量                                                | 近30天降水量                                                |\n  | ----------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |\n  | [QGRJSLFBT0808S](https://rsshub.app/ncc-cma/cmdp/image/QGRJSLFBT0808S) | [ZJ5TJSLFBT](https://rsshub.app/ncc-cma/cmdp/image/ZJ5TJSLFBT) | [ZJ10TJSL](https://rsshub.app/ncc-cma/cmdp/image/ZJ10TJSL) | [ZJ20TJSL](https://rsshub.app/ncc-cma/cmdp/image/ZJ20TJSL) | [ZJ30TJSL](https://rsshub.app/ncc-cma/cmdp/image/ZJ30TJSL) |\n\n  | 本月以来降水量                                            | 本季以来降水量                                            | 近10天降水量距平百分率                                          | 近20天降水量距平百分率                                          | 近30天降水量距平百分率                                          |\n  | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |\n  | [BYYLJSL](https://rsshub.app/ncc-cma/cmdp/image/BYYLJSL) | [BJYLJSL](https://rsshub.app/ncc-cma/cmdp/image/BJYLJSL) | [ZJ10TJSLJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ10TJSLJP) | [ZJ20TJSLJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ20TJSLJP) | [ZJ30TJSLJP](https://rsshub.app/ncc-cma/cmdp/image/ZJ30TJSLJP) |\n\n  | 本月以来降水量距平百分率                                                | 本季以来降水量距平百分率                                                | 本年以来降水量距平百分率                                      |\n  | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------- |\n  | [BYYLJSLJPZYQHZ](https://rsshub.app/ncc-cma/cmdp/image/BYYLJSLJPZYQHZ) | [BJYLJSLJPZJQHZ](https://rsshub.app/ncc-cma/cmdp/image/BJYLJSLJPZJQHZ) | [BNYLJSLJP](https://rsshub.app/ncc-cma/cmdp/image/BNYLJSLJP) |\n\n  | 气温距平（最近10天）                                                 | 气温距平（最近20天）                                                 | 气温距平（最近30天）                                                 | 气温距平（最近90天）                                                 | 最低气温距平（最近30天）                                           |\n  | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------ |\n  | [glbtmeana10_](https://rsshub.app/ncc-cma/cmdp/image/glbtmeana10_) | [glbtmeana20_](https://rsshub.app/ncc-cma/cmdp/image/glbtmeana20_) | [glbtmeana30_](https://rsshub.app/ncc-cma/cmdp/image/glbtmeana30_) | [glbtmeana90_](https://rsshub.app/ncc-cma/cmdp/image/glbtmeana90_) | [glbtmina30_](https://rsshub.app/ncc-cma/cmdp/image/glbtmina30_) |\n\n  | 最低气温距平（最近90天）                                           | 最高气温距平（最近30天）                                           | 最高气温距平（最近90天）                                           |\n  | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |\n  | [glbtmina90_](https://rsshub.app/ncc-cma/cmdp/image/glbtmina90_) | [glbtmaxa30_](https://rsshub.app/ncc-cma/cmdp/image/glbtmaxa30_) | [glbtmaxa90_](https://rsshub.app/ncc-cma/cmdp/image/glbtmaxa90_) |\n\n  | 降水量（最近10天）                                               | 降水量（最近20天）                                               | 降水量（最近30天）                                               | 降水量（最近90天）                                               | 降水距平百分率（最近10天）                                         |\n  | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |\n  | [glbrain10_](https://rsshub.app/ncc-cma/cmdp/image/glbrain10_) | [glbrain20_](https://rsshub.app/ncc-cma/cmdp/image/glbrain20_) | [glbrain30_](https://rsshub.app/ncc-cma/cmdp/image/glbrain30_) | [glbrain90_](https://rsshub.app/ncc-cma/cmdp/image/glbrain90_) | [glbraina10_](https://rsshub.app/ncc-cma/cmdp/image/glbraina10_) |\n\n  | 降水距平百分率（最近20天）                                         | 降水距平百分率（最近30天）                                         | 降水距平百分率（最近90天）                                         |\n  | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |\n  | [glbraina20_](https://rsshub.app/ncc-cma/cmdp/image/glbraina20_) | [glbraina30_](https://rsshub.app/ncc-cma/cmdp/image/glbraina30_) | [glbraina90_](https://rsshub.app/ncc-cma/cmdp/image/glbraina90_) |\n\n    ",
+        "categories": [
+          "forecast"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "日平均气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/RPJQWQYZ"
+          },
+          {
+            "title": "近5天平均气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ5TPJQWJP"
+          },
+          {
+            "title": "近10天平均气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ10TQWJP"
+          },
+          {
+            "title": "近20天平均气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ20TQWJP"
+          },
+          {
+            "title": "近30天平均气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ30TQWJP"
+          },
+          {
+            "title": "本月以来气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BYYLQWJP"
+          },
+          {
+            "title": "本季以来气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BJYLQWJP"
+          },
+          {
+            "title": "本年以来气温距平",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BNYLQWJP"
+          },
+          {
+            "title": "日降水量分布",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/QGRJSLFBT0808S"
+          },
+          {
+            "title": "近5天降水量",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ5TJSLFBT"
+          },
+          {
+            "title": "近10天降水量",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ10TJSL"
+          },
+          {
+            "title": "近20天降水量",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ20TJSL"
+          },
+          {
+            "title": "近30天降水量",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ30TJSL"
+          },
+          {
+            "title": "本月以来降水量",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/ncc-cma/cmdp/image/BYYLJSL"
+          },
+          {
+            "title": "本季以来降水量",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BJYLJSL"
+          },
+          {
+            "title": "近10天降水量距平百分率",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ10TJSLJP"
+          },
+          {
+            "title": "近20天降水量距平百分率",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ20TJSLJP"
+          },
+          {
+            "title": "近30天降水量距平百分率",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/ZJ30TJSLJP"
+          },
+          {
+            "title": "本月以来降水量距平百分率",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BYYLJSLJPZYQHZ"
+          },
+          {
+            "title": "本季以来降水量距平百分率",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BJYLJSLJPZJQHZ"
+          },
+          {
+            "title": "本年以来降水量距平百分率",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/BNYLJSLJP"
+          },
+          {
+            "title": "气温距平（最近10天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmeana10_"
+          },
+          {
+            "title": "气温距平（最近20天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmeana20_"
+          },
+          {
+            "title": "气温距平（最近30天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmeana30_"
+          },
+          {
+            "title": "气温距平（最近90天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmeana90_"
+          },
+          {
+            "title": "最低气温距平（最近30天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmina30_"
+          },
+          {
+            "title": "最低气温距平（最近90天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmina90_"
+          },
+          {
+            "title": "最高气温距平（最近30天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmaxa30_"
+          },
+          {
+            "title": "最高气温距平（最近90天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbtmaxa90_"
+          },
+          {
+            "title": "降水量（最近10天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbrain10_"
+          },
+          {
+            "title": "降水量（最近20天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbrain20_"
+          },
+          {
+            "title": "降水量（最近30天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbrain30_"
+          },
+          {
+            "title": "降水量（最近90天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbrain90_"
+          },
+          {
+            "title": "降水距平百分率（最近10天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbraina10_"
+          },
+          {
+            "title": "降水距平百分率（最近20天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbraina20_"
+          },
+          {
+            "title": "降水距平百分率（最近30天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbraina30_"
+          },
+          {
+            "title": "降水距平百分率（最近90天）",
+            "source": [
+              "cmdp.ncc-cma.net/cn/index.htm"
+            ],
+            "target": "/cmdp/image/glbraina90_"
+          }
+        ],
         "location": "cmdp.ts"
       }
     },
     "name": "国家气候中心",
-    "url": "cmdp.ncc-cma.net"
+    "url": "cmdp.ncc-cma.net",
+    "categories": [
+      "forecast"
+    ],
+    "description": ""
   },
   "ncepu": {
     "routes": {
@@ -38236,6 +38974,42 @@
     },
     "name": "上下游 News&Market",
     "url": "newsmarket.com.tw"
+  },
+  "newyorker": {
+    "routes": {
+      "/:category/:subCategory?": {
+        "path": "/:category/:subCategory?",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/newyorker/everything",
+        "parameters": {
+          "category": "rss category. can be found at `https://www.newyorker.com/about/feeds`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "newyorker.com/feed/:category/:subCategory?"
+            ]
+          }
+        ],
+        "name": "The New Yorker",
+        "maintainers": [
+          "EthanWng97"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "New Yorker",
+    "url": "newyorker.com"
   },
   "newzmz": {
     "routes": {
@@ -40800,6 +41574,37 @@
     "name": "南京航空航天大学",
     "url": "aao.nuaa.edu.cn"
   },
+  "nudt": {
+    "routes": {
+      "/yjszs/:type?": {
+        "path": "/yjszs/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/nudt/yjszs/sszs",
+        "parameters": {
+          "type": "分类，见下表，默认为硕士招生"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "研究生院",
+        "maintainers": [
+          "Blank0120"
+        ],
+        "url": "yjszs.nudt.edu.cn/",
+        "description": "| 通知公告 | 硕士招生 |\n  | -------- | -------- |\n  | tzgg     | sszs     |",
+        "location": "yjszs.ts"
+      }
+    },
+    "name": "中国人民解放军国防科技大学",
+    "url": "www.nudt.edu.cn"
+  },
   "nuist": {
     "routes": {
       "/bulletin/:category?": {
@@ -42690,6 +43495,57 @@
     "name": "Outage.Report",
     "url": "outage.report"
   },
+  "p-articles": {
+    "routes": {
+      "/contributors/:author": {
+        "path": "/contributors/:author",
+        "categories": [
+          "reading"
+        ],
+        "example": "/p-articles/contributors/黃衍仁",
+        "parameters": {
+          "author": "虛詞作者, 可在作者页面 URL 找到"
+        },
+        "name": "虛詞作者",
+        "maintainers": [
+          "Insomnia1437"
+        ],
+        "radar": [
+          {
+            "source": [
+              "p-articles.com/contributors/:author"
+            ]
+          }
+        ],
+        "location": "contributors.ts"
+      },
+      "/section/:section": {
+        "path": "/section/:section",
+        "categories": [
+          "reading"
+        ],
+        "example": "/p-articles/section/critics",
+        "parameters": {
+          "section": "版块名称, 可在对应版块 URL 中找到, 子版块链接用`-`连接"
+        },
+        "name": "版块",
+        "maintainers": [
+          "Insomnia1437"
+        ],
+        "radar": [
+          {
+            "source": [
+              "p-articles.com/:section/"
+            ]
+          }
+        ],
+        "location": "section.ts"
+      }
+    },
+    "name": "虚词",
+    "url": "p-articles.com",
+    "description": "\n:::tip\np-articles provides some official RSS feeds:\n\n-   section: `https://p-articles.com/section/:section`\n-   contributors: `https://p-articles.com/contributors/:author`\n:::"
+  },
   "panewslab": {
     "routes": {
       "/author/:id": {
@@ -42760,27 +43616,40 @@
         "url": "panewslab.com/",
         "location": "author.ts"
       },
-      "/:category?": {
-        "path": "/:category?",
+      "/news": {
+        "path": "/news",
         "categories": [
           "new-media"
         ],
-        "example": "/panewslab",
-        "parameters": {
-          "category": "分类，见下表，默认为精选"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
+        "example": "/panewslab/news",
         "radar": [
           {
             "source": [
               "panewslab.com/"
+            ]
+          }
+        ],
+        "name": "快讯",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "url": "panewslab.com/",
+        "location": "news.ts"
+      },
+      "/profundity/:category?": {
+        "path": "/profundity/:category?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/panewslab/profundity",
+        "parameters": {
+          "category": "分类，见下表，默认为精选"
+        },
+        "radar": [
+          {
+            "source": [
+              "panewslab.com/",
+              "www.panewslab.com/zh/profundity/index.html"
             ]
           }
         ],
@@ -42790,71 +43659,7 @@
         ],
         "url": "panewslab.com/",
         "description": "| 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |\n  | ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |",
-        "location": "index.ts"
-      },
-      "/news": {
-        "path": [
-          "/news",
-          "/newsflash"
-        ],
-        "categories": [
-          "new-media"
-        ],
-        "example": "/panewslab/news",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "panewslab.com/"
-            ]
-          }
-        ],
-        "name": "快讯",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "url": "panewslab.com/",
-        "location": "news.ts"
-      },
-      "/newsflash": {
-        "path": [
-          "/news",
-          "/newsflash"
-        ],
-        "categories": [
-          "new-media"
-        ],
-        "example": "/panewslab/news",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "panewslab.com/"
-            ]
-          }
-        ],
-        "name": "快讯",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "url": "panewslab.com/",
-        "location": "news.ts"
+        "location": "profundity.ts"
       },
       "/topic/:id": {
         "path": "/topic/:id",
@@ -44679,8 +45484,8 @@
   },
   "pornhub": {
     "routes": {
-      "/:language?/category_url/:url?": {
-        "path": "/:language?/category_url/:url?",
+      "/category_url/:url?/:language?": {
+        "path": "/category_url/:url?/:language?",
         "categories": [
           "multimedia"
         ],
@@ -44728,8 +45533,8 @@
         ],
         "location": "category.ts"
       },
-      "/:language?/model/:username/:sort?": {
-        "path": "/:language?/model/:username/:sort?",
+      "/model/:username/:language?/:sort?": {
+        "path": "/model/:username/:language?/:sort?",
         "categories": [
           "multimedia"
         ],
@@ -44762,8 +45567,8 @@
         ],
         "location": "model.ts"
       },
-      "/:language?/pornstar/:username/:sort?": {
-        "path": "/:language?/pornstar/:username/:sort?",
+      "/pornstar/:username/:language?/:sort?": {
+        "path": "/pornstar/:username/:language?/:sort?",
         "categories": [
           "multimedia"
         ],
@@ -44820,8 +45625,8 @@
         ],
         "location": "search.ts"
       },
-      "/:language?/users/:username": {
-        "path": "/:language?/users/:username",
+      "/users/:username/:language?": {
+        "path": "/users/:username/:language?",
         "categories": [
           "multimedia"
         ],
@@ -46113,6 +46918,69 @@
         "description": "| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n  :::tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n  :::",
         "location": "ac/rank.ts"
       },
+      "/cfhd/news/:category?": {
+        "path": "/cfhd/news/:category?",
+        "name": "穿越火线 CFHD 专区资讯中心",
+        "url": "cfhd.cf.qq.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/qq/cfhd/news",
+        "parameters": {
+          "category": "分类，默认为 60847，即最新，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [穿越火线 CFHD 专区资讯中心 - 最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml)，网址为 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml`。截取 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/` 到末尾 `/m22510/list_1.shtml` 的部分 `60847` 作为参数填入，此时路由为 [`/qq/cfhd/news/60847`](https://rsshub.app/qq/cfhd/news/60847)。\n  :::\n\n  | 分类                                                                                                  | ID                                            |\n  | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |\n  | [最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml) | [60847](https://rsshub.app/qq/cfhd/news/60847) |\n  | [公告](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml) | [59625](https://rsshub.app/qq/cfhd/news/59625) |\n  | [版本](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml) | [60850](https://rsshub.app/qq/cfhd/news/60850) |\n  | [赛事](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml) | [59626](https://rsshub.app/qq/cfhd/news/59626) |\n  | [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |\n  ",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 最新",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/60847"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 公告",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/59625"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 版本",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/60850"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 赛事",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/59626"
+          },
+          {
+            "title": "穿越火线 CFHD 专区资讯中心 - 杂谈",
+            "source": [
+              "cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml"
+            ],
+            "target": "/cfhd/news/59624"
+          }
+        ],
+        "location": "cfhd/index.ts"
+      },
       "/fact": {
         "path": "/fact",
         "categories": [
@@ -46190,8 +47058,12 @@
         "location": "kg/user.ts"
       }
     },
-    "name": "腾讯新闻较真查证平台",
-    "url": "ac.qq.com"
+    "name": "腾讯网",
+    "url": "qq.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
   },
   "qq88": {
     "routes": {
@@ -50903,6 +51775,59 @@
     "name": "上海交通大学",
     "url": "bjwb.seiee.sjtu.edu.cn"
   },
+  "sketis": {
+    "routes": {
+      "/isabelle-dev/blog/:blog": {
+        "path": "/isabelle-dev/blog/:blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/sketis/isabelle-dev/blog/1",
+        "parameters": {
+          "blog": "name of blog (1 for NEWS; 2 for Release)"
+        },
+        "description": "\n- Isabelle News: `https://isabelle-dev.sketis.net/phame/blog/view/1/`\n- Isabelle Release: `https://isabelle-dev.sketis.net/phame/blog/view/2/`\n",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "isabelle-dev.sketis.net/phame/",
+              "isabelle-dev.sketis.net/phame/blog/",
+              "isabelle-dev.sketis.net/phame/blog/view/:blog/",
+              "isabelle-dev.sketis.net/phame/post/",
+              "isabelle-dev.sketis.net/phame/post/view/:post_id/:post_title/"
+            ],
+            "target": "/isabelle-dev/blog/1"
+          },
+          {
+            "source": [
+              "isabelle-dev.sketis.net/phame/",
+              "isabelle-dev.sketis.net/phame/blog/",
+              "isabelle-dev.sketis.net/phame/blog/view/:blog/",
+              "isabelle-dev.sketis.net/phame/post/",
+              "isabelle-dev.sketis.net/phame/post/view/:post_id/:post_title/"
+            ],
+            "target": "/isabelle-dev/blog/2"
+          }
+        ],
+        "name": "Isabelle Development Blogs",
+        "url": "isabelle-dev.sketis.net",
+        "maintainers": [
+          "Ritsuka314"
+        ],
+        "location": "isabelle-dev/blog/index.ts"
+      }
+    },
+    "name": "Sketis | Website of Dr. Makarius Wenzel",
+    "url": "sketis.net"
+  },
   "skysports": {
     "routes": {
       "/news/:team": {
@@ -54360,23 +55285,11 @@
   "techflowpost": {
     "routes": {
       "/express": {
-        "path": [
-          "/express",
-          "/newsflash"
-        ],
+        "path": "/express",
         "categories": [
           "finance"
         ],
         "example": "/techflowpost/express",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -54388,52 +55301,20 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "techflowpost.com/newsletter/index.html",
-        "location": "express.ts"
-      },
-      "/newsflash": {
-        "path": [
-          "/express",
-          "/newsflash"
-        ],
-        "categories": [
-          "finance"
-        ],
-        "example": "/techflowpost/express",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "techflowpost.com/newsletter/index.html"
-            ]
-          }
-        ],
-        "name": "快讯",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "url": "techflowpost.com/newsletter/index.html",
+        "url": "techflowpost.com/",
         "location": "express.ts"
       },
       "/": {
         "path": "/",
+        "example": "/techflowpost",
         "radar": [
           {
             "source": [
               "techflowpost.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "首页",
         "maintainers": [
           "nczitzk"
         ],
@@ -54621,7 +55502,7 @@
           "DIYgod",
           "Rongronggg9"
         ],
-        "description": "| Key                   | Description                                                           | Accepts                                              | Defaults to       |\n  | --------------------- | --------------------------------------------------------------------- | ---------------------------------------------------- | ----------------- |\n  | showLinkPreview       | Show the link preview from Telegram                                   | 0/1/true/false                                       | true              |\n  | showViaBot            | For messages sent via bot, show the bot                               | 0/1/true/false                                       | true              |\n  | showReplyTo           | For reply messages, show the target of the reply                      | 0/1/true/false                                       | true              |\n  | showFwdFrom           | For forwarded messages, show the forwarding source                    | 0/1/true/false                                       | true              |\n  | showFwdFromAuthor     | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                       | true              |\n  | showInlineButtons     | Show inline buttons                                                   | 0/1/true/false                                       | false             |\n  | showMediaTagInTitle   | Show media tags in the title                                          | 0/1/true/false                                       | true              |\n  | showMediaTagAsEmoji   | Show media tags as emoji                                              | 0/1/true/false                                       | true              |\n  | includeFwd            | Include forwarded messages                                            | 0/1/true/false                                       | true              |\n  | includeReply          | Include reply messages                                                | 0/1/true/false                                       | true              |\n  | includeServiceMsg     | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                       | true              |\n  | includeUnsupportedMsg | Include messages unsupported by t.me                                  | 0/1/true/false                                       | false             |\n  | searchQuery           | search query                                                          | keywords; replace `#` by `%23` for hashtag searching | (search disabled) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::",
+        "description": "\n  | Key                    | Description                                                           | Accepts                                            | Defaults to  |\n  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::",
         "location": "channel.ts"
       },
       "/stickerpack/:name": {
@@ -54838,80 +55719,33 @@
   },
   "tfc-taiwan": {
     "routes": {
-      "/": {
-        "path": [
-          "/",
-          "/category/:id{.+}",
-          "/info",
-          "/report",
-          "/topic/:id"
-        ],
-        "name": "Unknown",
+      "/:type?": {
+        "name": "最新相關資訊 / 最新查核報告",
         "maintainers": [
           "TonyRL"
         ],
-        "url": "tfc-taiwan.org.tw/articles/info",
+        "example": "/tfc-taiwan",
+        "path": "/:type?",
+        "parameters": {
+          "type": "分類，見下表，預設為 `report`"
+        },
+        "url": "tfc-taiwan.org.tw/articles/report",
+        "description": "| 最新相關資訊 | 最新查核報告 |\n| ------------ | ------------ |\n| info         | report       |",
         "location": "index.ts"
       },
-      "/category/:id{.+}": {
-        "path": [
-          "/",
-          "/category/:id{.+}",
-          "/info",
-          "/report",
-          "/topic/:id"
-        ],
-        "name": "Unknown",
+      "/:type/:id{.+}": {
+        "name": "專題 / 重點專區",
         "maintainers": [
           "TonyRL"
         ],
-        "url": "tfc-taiwan.org.tw/articles/info",
-        "location": "index.ts"
-      },
-      "/info": {
-        "path": [
-          "/",
-          "/category/:id{.+}",
-          "/info",
-          "/report",
-          "/topic/:id"
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "tfc-taiwan.org.tw/articles/info",
-        "location": "index.ts"
-      },
-      "/report": {
-        "path": [
-          "/",
-          "/category/:id{.+}",
-          "/info",
-          "/report",
-          "/topic/:id"
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "tfc-taiwan.org.tw/articles/info",
-        "location": "index.ts"
-      },
-      "/topic/:id": {
-        "path": [
-          "/",
-          "/category/:id{.+}",
-          "/info",
-          "/report",
-          "/topic/:id"
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "tfc-taiwan.org.tw/articles/info",
-        "location": "index.ts"
+        "example": "/tfc-taiwan/category/242",
+        "path": "/:type/:id{.+}",
+        "parameters": {
+          "type": "分類，見下表，預設為 `report`"
+        },
+        "url": "tfc-taiwan.org.tw/articles/report",
+        "description": "| 專題     | 重點專區 |\n| -------- | -------- |\n| category | topic    |",
+        "location": "topic.ts"
       }
     },
     "name": "台灣事實查核中心",
@@ -56787,6 +57621,70 @@
     "name": "The Ring of Wonder",
     "url": "trow.cc"
   },
+  "tsinghua": {
+    "routes": {
+      "/lib/zydt/:category?": {
+        "path": "/lib/zydt/:category?",
+        "name": "图书馆资源动态",
+        "url": "lib.tsinghua.edu.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/tsinghua/lib/zydt",
+        "parameters": {
+          "category": "分类，默认为空，即全部，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [清华大学图书馆已购资源动态](https://lib.tsinghua.edu.cn/zydt/yg.htm)，网址为 `https://lib.tsinghua.edu.cn/zydt/yg.htm`。截取 `https://lib.tsinghua.edu.cn/zydt` 到末尾 `.htm` 的部分 `yg` 作为参数填入，此时路由为 [`/tsinghua/lib/zydt/yg`](https://rsshub.app/tsinghua/lib/zydt/yg)。\n  :::\n\n  | 已购 | 试用 |\n  | ---- | ---- |\n  | yg   | sy   |\n  ",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "lib.tsinghua.edu.cn/zydt/:category?"
+            ]
+          },
+          {
+            "title": "图书馆资源动态",
+            "source": [
+              "lib.tsinghua.edu.cn/zydt"
+            ],
+            "target": "/lib/zydt"
+          },
+          {
+            "title": "图书馆已购资源动态",
+            "source": [
+              "lib.tsinghua.edu.cn/zydt/yg"
+            ],
+            "target": "/lib/zydt/yg"
+          },
+          {
+            "title": "图书馆试用资源动态",
+            "source": [
+              "lib.tsinghua.edu.cn/zydt/sy"
+            ],
+            "target": "/lib/zydt/sy"
+          }
+        ],
+        "location": "lib/zydt.ts"
+      }
+    },
+    "name": "清华大学",
+    "url": "tsinghua.edu.cn",
+    "categories": [
+      "university"
+    ],
+    "description": ""
+  },
   "ttv": {
     "routes": {
       "/:category?": {
@@ -57076,7 +57974,12 @@
           "routeParams": "extra parameters, see the table above"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -57483,6 +58386,36 @@
     },
     "name": "Typora",
     "url": "typora.io"
+  },
+  "typst": {
+    "routes": {
+      "/universe": {
+        "path": "/universe",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/typst/universe",
+        "radar": [
+          {
+            "source": [
+              "typst.app/universe"
+            ],
+            "target": "/universe"
+          }
+        ],
+        "name": "Universe",
+        "maintainers": [
+          "HPDell"
+        ],
+        "location": "universe.ts"
+      }
+    },
+    "name": "Typst",
+    "url": "typst.com",
+    "description": "\nCompose papers faster: Focus on your text and let Typst take care of layout and formatting.\n",
+    "zh": {
+      "name": "Typst"
+    }
   },
   "u3c3": {
     "routes": {
@@ -60922,6 +61855,31 @@
         "maintainers": [],
         "location": "news.ts"
       },
+      "/rsgis/:type/:sub?": {
+        "path": "/rsgis/:type/:sub?",
+        "categories": [
+          "university"
+        ],
+        "example": "/whu/rsgis/index",
+        "parameters": {
+          "type": "栏目，详见表格",
+          "sub": "子栏目。当 `type` 为 `index` 的时候不起效；当 `type` 为其他合法值时，默认为 `all` 表示所有子类，其他可选项见下表。"
+        },
+        "radar": [
+          {
+            "source": [
+              "rsgis.whu.edu.cn/index.htm"
+            ],
+            "target": "/rsgis/index"
+          }
+        ],
+        "name": "武汉大学遥感信息工程学院",
+        "maintainers": [
+          "HPDell"
+        ],
+        "description": "\n\n|  分类名  | `type` 值 |  子类名  | `sub` 值 |\n| :------: | :-------- | :------: | :------- |\n|   首页   | `index`   |          |          |\n| 学院新闻 | `xyxw`    |   全部   | `all`    |\n|          |           | 学院要闻 | `xyyw`   |\n|          |           | 合作交流 | `hzjl`   |\n|          |           | 媒体聚焦 | `mtjj`   |\n|          |           | 学工要闻 | `xgyw`   |\n| 科学研究 | `kxyj`    |   全部   | `all`    |\n|          |           | 学术报告 | `xsbg`   |\n|          |           | 学术交流 | `xsjl`   |\n|          |           | 学术成果 | `kycg`   |\n|          |           | 申报信息 | `sbxx`   |\n| 通知公告 | `tzgg`    |   全部   | `all`    |\n|          |           | 学院通知 | `xytz`   |\n|          |           | 教学动态 | `jxdt`   |\n|          |           | 学术动态 | `xsdt`   |\n|          |           | 人才引进 | `rcyj`   |\n",
+        "location": "rsgis.ts"
+      },
       "/gs/:type?": {
         "path": "/gs/:type?",
         "categories": [
@@ -61141,71 +62099,57 @@
   },
   "wnacg": {
     "routes": {
-      "/": {
-        "path": [
-          "/",
-          "/category/:cid",
-          "/tag/:tag"
-        ],
-        "radar": [
-          {
-            "source": [
-              "wnacg.org/albums.html",
-              "wnacg.org/"
-            ],
-            "target": ""
-          }
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "KenMizz"
-        ],
-        "url": "wnacg.org/albums.html",
-        "location": "index.ts"
-      },
       "/category/:cid": {
-        "path": [
-          "/",
-          "/category/:cid",
-          "/tag/:tag"
+        "name": "分类更新",
+        "maintainers": [
+          "Gandum2077"
         ],
+        "path": "/category/:cid",
+        "example": "/wnacg/category/6",
         "radar": [
           {
             "source": [
-              "wnacg.org/albums.html",
-              "wnacg.org/"
-            ],
-            "target": ""
+              "wnacg.com/*"
+            ]
           }
         ],
-        "name": "Unknown",
+        "url": "wnacg.com/albums.html",
+        "location": "category.ts"
+      },
+      "/": {
+        "name": "最新",
         "maintainers": [
           "KenMizz"
         ],
-        "url": "wnacg.org/albums.html",
+        "path": "/",
+        "example": "/wnacg",
+        "radar": [
+          {
+            "source": [
+              "wnacg.com/albums.html",
+              "wnacg.com/"
+            ]
+          }
+        ],
+        "url": "wnacg.com/albums.html",
         "location": "index.ts"
       },
       "/tag/:tag": {
-        "path": [
-          "/",
-          "/category/:cid",
-          "/tag/:tag"
+        "name": "標籤更新",
+        "maintainers": [
+          "Gandum2077"
         ],
+        "path": "/tag/:tag",
+        "example": "/wnacg/tag/漢化",
         "radar": [
           {
             "source": [
-              "wnacg.org/albums.html",
-              "wnacg.org/"
-            ],
-            "target": ""
+              "wnacg.com/*"
+            ]
           }
         ],
-        "name": "Unknown",
-        "maintainers": [
-          "KenMizz"
-        ],
-        "url": "wnacg.org/albums.html",
-        "location": "index.ts"
+        "url": "wnacg.com/albums.html",
+        "location": "tag.ts"
       }
     },
     "name": "紳士漫畫",
@@ -63214,6 +64158,75 @@
     "name": "Yahoo",
     "url": "hk.news.yahoo.com"
   },
+  "yamibo": {
+    "routes": {
+      "/bbs/forum/:fid/:type?": {
+        "name": "BBS - 板块",
+        "categories": [
+          "bbs"
+        ],
+        "path": "/bbs/forum/:fid/:type?",
+        "example": "/yamibo/bbs/forum/5/404",
+        "parameters": {
+          "fid": "板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值",
+          "type": "板块子分类，网页中选中板块分类后URL中的typeid值"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "antiCrawler": true,
+          "requireConfig": [
+            {
+              "optional": true,
+              "name": "YAMIBO_SALT",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"
+            },
+            {
+              "optional": true,
+              "name": "YAMIBO_AUTH",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"
+            }
+          ]
+        },
+        "description": ":::warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::",
+        "location": "bbs/forum.ts"
+      },
+      "/bbs/thread/:tid": {
+        "name": "BBS - 讨论串",
+        "categories": [
+          "bbs"
+        ],
+        "path": "/bbs/thread/:tid",
+        "example": "/yamibo/bbs/thread/541914",
+        "parameters": {
+          "tid": "讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "antiCrawler": true,
+          "requireConfig": [
+            {
+              "optional": true,
+              "name": "YAMIBO_SALT",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"
+            },
+            {
+              "optional": true,
+              "name": "YAMIBO_AUTH",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"
+            }
+          ]
+        },
+        "description": ":::warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::",
+        "location": "bbs/thread.ts"
+      }
+    },
+    "name": "百合会",
+    "url": "yamibo.com"
+  },
   "yande": {
     "routes": {
       "/post/popular_recent/:period?": {
@@ -63927,7 +64940,7 @@
             "target": "/channel/:id"
           }
         ],
-        "name": "Channel",
+        "name": "Channel with id",
         "maintainers": [
           "DIYgod"
         ],
@@ -63977,6 +64990,19 @@
           "username": "YouTube custom URL",
           "embed": "Default to embed the video, set to any value to disable embedding"
         },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
@@ -64002,7 +65028,12 @@
           "embed": "Default to embed the video, set to any value to disable embedding"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -64026,7 +65057,12 @@
           "embed": "Default to embed the video, set to any value to disable embedding"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -64089,13 +65125,18 @@
         "categories": [
           "social-media"
         ],
-        "example": "/youtube/user/JFlaMusic",
+        "example": "/youtube/user/@JFlaMusic",
         "parameters": {
-          "username": "YouTuber id",
+          "username": "YouTuber username with @",
           "embed": "Default to embed the video, set to any value to disable embedding"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -64110,15 +65151,15 @@
             "target": "/user/:username"
           }
         ],
-        "name": "User",
+        "name": "Channel with username",
         "maintainers": [
           "DIYgod"
         ],
         "location": "user.ts"
       }
     },
-    "name": "YouTube Live",
-    "url": "charts.youtube.com"
+    "name": "YouTube",
+    "url": "youtube.com"
   },
   "youzhiyouxing": {
     "routes": {
