@@ -1,4 +1,17 @@
 {
+  "81.cn": {
+    "_name": "中国军网",
+    "81rc": [
+      {
+        "title": "中国人民解放军专业技术人才网",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/81params=>{const category=params.category;return`/81/81rc/${category?`/${category}`:\"\"}`}"
+      }
+    ]
+  },
   "163.com": {
     "_name": "网易公开课",
     "ds": [
@@ -542,7 +555,7 @@
       }
     ]
   },
-  "69shu.top": {
+  "69shuba.pro": {
     "_name": "69书吧",
     "www": [
       {
@@ -1079,6 +1092,20 @@
       }
     ]
   },
+  "alipan.com": {
+    "_name": "阿里云盘",
+    "www": [
+      {
+        "title": "文件列表",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/s/:share_id/folder/:parent_file_id",
+          "/s/:share_id"
+        ],
+        "target": "/alipan/files/:share_id/:parent_file_id?"
+      }
+    ]
+  },
   "aliresearch.com": {
     "_name": "阿里研究院",
     ".": [
@@ -1352,33 +1379,6 @@
           "/"
         ],
         "target": "/arcteryx/regear/new-arrivals"
-      }
-    ]
-  },
-  "arknights.jp": {
-    "_name": "明日方舟",
-    "ak": [
-      {
-        "title": "アークナイツ (日服新闻)",
-        "docs": "https://docs.rsshub.app/routes/game",
-        "source": [
-          "/news",
-          "/"
-        ],
-        "target": "/arknights/japan"
-      }
-    ]
-  },
-  "hypergryph.com": {
-    "_name": "明日方舟",
-    "ak-conf": [
-      {
-        "title": "游戏公告与新闻",
-        "docs": "https://docs.rsshub.app/routes/game",
-        "source": [
-          "/*"
-        ],
-        "target": "/arknights/news"
       }
     ]
   },
@@ -2069,6 +2069,19 @@
           "/"
         ],
         "target": "/bjsk/keti/:id"
+      }
+    ]
+  },
+  "bjtu.edu.cn": {
+    "_name": "Beijing Jiaotong University",
+    "gs": [
+      {
+        "title": "研究生院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/bjtu/gs/:type?"
       }
     ]
   },
@@ -2946,6 +2959,20 @@
           "/"
         ],
         "target": "/cfachina/servicesupport/analygarden/:program?"
+      }
+    ]
+  },
+  "cfr.org": {
+    "_name": "Council on Foreign Relations",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category",
+          "/:category/:subCategory"
+        ],
+        "target": "/cfr/:category/:subCategory?"
       }
     ]
   },
@@ -4477,6 +4504,15 @@
         "target": "/domp4/detail/:id"
       },
       {
+        "title": "最近更新的电源BT列表",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/",
+          "/custom/update.html"
+        ],
+        "target": "/domp4/latest_movie_bt"
+      },
+      {
         "title": "最近更新",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
@@ -5087,6 +5123,19 @@
       }
     ]
   },
+  "fanqienovel.com": {
+    "_name": "番茄小说",
+    ".": [
+      {
+        "title": "小说更新",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/page/:bookId"
+        ],
+        "target": "/fanqienovel/page/:bookId"
+      }
+    ]
+  },
   "fansly.com": {
     "_name": "Fansly",
     ".": [
@@ -5279,26 +5328,26 @@
         "target": "/finology/bullets"
       },
       {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:category"
+        ],
+        "target": "/finology/:category"
+      },
+      {
         "title": "Most Viewed",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
-          "/:category"
+          "/most-viewed"
         ],
-        "target": "/finology/:category"
+        "target": "/finology/most-viewed/monthly"
       },
       {
-        "title": "Category",
+        "title": "Trending Topic",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
-          "/:category"
-        ],
-        "target": "/finology/:category"
-      },
-      {
-        "title": "Category",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/:category"
+          "/tag/:topic"
         ],
         "target": "/finology/tag/:topic"
       }
@@ -8017,6 +8066,33 @@
       }
     ]
   },
+  "arknights.jp": {
+    "_name": "鹰角网络",
+    "ak": [
+      {
+        "title": "アークナイツ (日服新闻)",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/hypergryph/arknights/japan"
+      }
+    ]
+  },
+  "hypergryph.com": {
+    "_name": "鹰角网络",
+    "ak-conf": [
+      {
+        "title": "明日方舟 - 游戏公告与新闻",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news"
+        ],
+        "target": "/hypergryph/arknights/news/:group?"
+      }
+    ]
+  },
   "icac.org.hk": {
     "_name": "Hong Kong Independent Commission Against Corruption 香港廉政公署",
     ".": [
@@ -8215,6 +8291,19 @@
           "/"
         ],
         "target": "/imagemagick/changelog"
+      }
+    ]
+  },
+  "imdb.com": {
+    "_name": "IMDb",
+    "www": [
+      {
+        "title": "Charts",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/chart/:chart/"
+        ],
+        "target": "/imdb/chart/:chart?"
       }
     ]
   },
@@ -8468,16 +8557,16 @@
       }
     ]
   },
-  "seejav.pw": {
+  "javbus.com": {
     "_name": "JavBus",
     "www": [
       {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/other",
+        "title": "Works",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/"
+          "/:path*"
         ],
-        "target": "/javbus*"
+        "target": "/javbus/:path"
       }
     ]
   },
@@ -8493,20 +8582,12 @@
         "target": "/javdb/actors/:id/:filter?"
       },
       {
-        "title": "Unknown",
+        "title": "主页",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/"
         ],
         "target": "/javdb/home/:category?/:sort?/:filter?"
-      },
-      {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/multimedia",
-        "source": [
-          "/"
-        ],
-        "target": "/javdb/:category?/:sort?/:filter?"
       },
       {
         "title": "Unknown",
@@ -8652,6 +8733,19 @@
       }
     ]
   },
+  "jingzhengu.com": {
+    "_name": "精真估",
+    "www": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/jingzhengu/news"
+      }
+    ]
+  },
   "jisilu.cn": {
     "_name": "集思录",
     ".": [
@@ -8664,6 +8758,19 @@
           "/"
         ],
         "target": "/jisilu/:category?/:sort?/:day?"
+      }
+    ]
+  },
+  "jiuyangongshe.com": {
+    "_name": "韭研公社",
+    "www": [
+      {
+        "title": "社群",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/jiuyangongshe/community"
       }
     ]
   },
@@ -8778,6 +8885,19 @@
           "/tag/:tag"
         ],
         "target": "/juejin/tag/:tag"
+      }
+    ]
+  },
+  "kadokawa.com.tw": {
+    "_name": "台灣角川",
+    ".": [
+      {
+        "title": "角編新聞台",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog/posts"
+        ],
+        "target": "/kadokawa/blog"
       }
     ]
   },
@@ -9691,6 +9811,35 @@
           "/user/book/shelf"
         ],
         "target": "/manhuagui/subscribe"
+      }
+    ]
+  },
+  "matters.town": {
+    "_name": "Matters",
+    ".": [
+      {
+        "title": "Author",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:uid"
+        ],
+        "target": "/mattersparams=>`/matters/author/${params.uid.slice(1)}`"
+      },
+      {
+        "title": "Latest, heat, essence",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/matters/latest/:type?"
+      },
+      {
+        "title": "Tags",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/tags/:tid"
+        ],
+        "target": "/matters/tags/:tid"
       }
     ]
   },
@@ -10736,7 +10885,7 @@
         "source": [
           "/:key/:keyword"
         ],
-        "target": "/nhentai/:key/:keyword"
+        "target": "/nhentai/index/:key/:keyword"
       },
       {
         "title": "Advanced Search",
@@ -10823,6 +10972,30 @@
           "/"
         ],
         "target": "/nikkei/asia"
+      }
+    ],
+    "cn": [
+      {
+        "title": "中文版新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category/:type",
+          "/:category",
+          "/"
+        ],
+        "target": "/nikkeiparams=>{if(params.category&&params.type){return`/nikkei/cn/cn/${params.category}/${params.type.replace(\".html\",\"\")}`}else if(params.category&&!params.type){return`/nikkei/cn/cn/${params.category.replace(\".html\",\"\")}`}else{return`/nikkei/cn/cn`}}"
+      }
+    ],
+    "zh.cn": [
+      {
+        "title": "中文版新聞",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category/:type",
+          "/:category",
+          "/"
+        ],
+        "target": "/nikkeiparams=>{if(params.category&&params.type){return`/nikkei/cn/zh/${params.category}/${params.type.replace(\".html\",\"\")}`}else if(params.category&&!params.type){return`/nikkei/cn/zh/${params.category.replace(\".html\",\"\")}`}else{return`/nikkei/cn/zh`}}"
       }
     ]
   },
@@ -12298,6 +12471,28 @@
           "/*topicPath"
         ],
         "target": "/pnas/:topicPath"
+      }
+    ]
+  },
+  "podwise.ai": {
+    "_name": "Podwise",
+    ".": [
+      {
+        "title": "Collections",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/",
+          "/explore"
+        ],
+        "target": "/podwise/explore"
+      },
+      {
+        "title": "Episodes",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/explore/:type"
+        ],
+        "target": "/podwise/explore/:type"
       }
     ]
   },
@@ -14093,14 +14288,24 @@
   },
   "shisu.edu.cn": {
     "_name": "上海外国语大学",
+    "en": [
+      {
+        "title": "SISU TODAY | FEATURED STORIES",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/resources/:section/"
+        ],
+        "target": "/shisu/en/:section"
+      }
+    ],
     "news": [
       {
         "title": "上外新闻",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/:category/index.html"
+          "/:section/index.html"
         ],
-        "target": "/shisu/news/:category"
+        "target": "/shisu/news/:section"
       }
     ]
   },
@@ -14930,6 +15135,19 @@
       }
     ]
   },
+  "stream-capital.com": {
+    "_name": "远川研究所",
+    "www": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/search"
+        ],
+        "target": "/stream-capital/search"
+      }
+    ]
+  },
   "studygolang.com": {
     "_name": "Go 语言中文网",
     ".": [
@@ -15051,6 +15269,16 @@
         ],
         "target": "/swjtu/xg"
       }
+    ],
+    "gsee": [
+      {
+        "title": "地球科学与工程学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/swjtu/gsee/yjs"
+      }
     ]
   },
   "swpu.edu.cn": {
@@ -15097,7 +15325,7 @@
         "target": "/swpu/is/:code"
       },
       {
-        "title": "计算机科学学院",
+        "title": "计算机与软件学院",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/"
@@ -15416,6 +15644,27 @@
           "/:category"
         ],
         "target": "/theatlantic/:category"
+      }
+    ]
+  },
+  "theblockbeats.info": {
+    "_name": "律动 BlockBeats",
+    "www": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article"
+        ],
+        "target": "/theblockbeats/article"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/newsflash"
+        ],
+        "target": "/theblockbeats/newsflash"
       }
     ]
   },
@@ -15953,8 +16202,8 @@
       }
     ]
   },
-  "twitter.com": {
-    "_name": "Twitter",
+  "x.com": {
+    "_name": "X (Twitter)",
     ".": [
       {
         "title": "Home timeline",
@@ -16613,6 +16862,19 @@
       }
     ]
   },
+  "vice.com": {
+    "_name": "VICE",
+    "www": [
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:language/topic/:topic"
+        ],
+        "target": "/vice/topic/:topic/:language"
+      }
+    ]
+  },
   "vimeo.com": {
     "_name": "Vimeo",
     ".": [
@@ -17100,6 +17362,19 @@
           "/wj/*path"
         ],
         "target": "/worldjournal/:path"
+      }
+    ]
+  },
+  "worldofwarships.com": {
+    "_name": "World of Warships",
+    "blog": [
+      {
+        "title": "Development Blog",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/worldofwarships/devblog"
       }
     ]
   },
