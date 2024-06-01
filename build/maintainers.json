@@ -2444,19 +2444,35 @@
   ],
   "/gov/sasac/:path{.+}": [],
   "/gov/sdb/*": [],
-  "/gov/shaanxi/kjt/:id?": [
+  "/gov/sh/fgw/:category{.+}?": [
     "nczitzk"
+  ],
+  "/gov/shanghai/fgw/:category{.+}?": [
+    "nczitzk"
+  ],
+  "/gov/sh/rsj/ksxm": [
+    "Fatpandac"
   ],
   "/gov/shanghai/rsj/ksxm": [
     "Fatpandac"
   ],
+  "/gov/sh/wgj/:page?": [
+    "gideonsenku"
+  ],
   "/gov/shanghai/wgj/:page?": [
     "gideonsenku"
+  ],
+  "/gov/sh/wsjkw/yqtb": [
+    "zcf0508"
   ],
   "/gov/shanghai/wsjkw/yqtb": [
     "zcf0508"
   ],
+  "/gov/sh/yjj/*": [],
   "/gov/shanghai/yjj/*": [],
+  "/gov/shaanxi/kjt/:id?": [
+    "nczitzk"
+  ],
   "/gov/shenzhen/hrss/szksy/:caty/:page?": [
     "zlasd"
   ],
@@ -2954,13 +2970,9 @@
   "/idolypride/news": [
     "Mingxia1"
   ],
-  "/ieee/journal/:journal/earlyaccess/:sortType?": [
-    "5upernova-heng"
+  "/ieee/journal/:punumber/:earlyAccess?": [
+    "HenryQW"
   ],
-  "/ieee/:journal/latest/vol/:sortType?": [],
-  "/ieee/journal/:journal/:sortType?": [],
-  "/ieee/:journal/latest/date/:sortType?": [],
-  "/ieee/journal/:journal/recent/:sortType?": [],
   "/ieee-security/security-privacy": [
     "ZeddYu"
   ],
@@ -3239,6 +3251,12 @@
   ],
   "/jjwxc/book/:id?": [
     "nczitzk"
+  ],
+  "/jlu/jwc": [
+    "mayouxi"
+  ],
+  "/jlu/ccst/xwzx/:category": [
+    "mayouxi"
   ],
   "/jornada/:date?/:category?": [
     "Thealf154"
@@ -4124,7 +4142,7 @@
   "/nowcoder/schedule/:propertyId?/:typeId?": [
     "junfengP"
   ],
-  "/npmpackage/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}": [],
+  "/npm/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}": [],
   "/npr/:endpoint?": [
     "bennyyip"
   ],
@@ -5557,6 +5575,9 @@
   "/telegram/stickerpack/:name": [
     "DIYgod"
   ],
+  "/tencent/cloud/developer/column/:categoryId?": [
+    "lyling"
+  ],
   "/tencent/news/author/:mid": [
     "LogicJake",
     "miles170"
@@ -6158,6 +6179,9 @@
     "DIYgod",
     "Rongronggg9"
   ],
+  "/weibo/user_bookmarks/:uid/:routeParams?": [
+    "cztchoice"
+  ],
   "/weibo/user/:uid/:routeParams?": [
     "DIYgod",
     "iplusx",
@@ -6226,6 +6250,9 @@
   ],
   "/winstall/:appId": [
     "TonyRL"
+  ],
+  "/wired/tag/:tag": [
+    "Naiqus"
   ],
   "/wise/pair/:source/:target": [
     "HenryQW"
