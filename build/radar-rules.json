@@ -775,6 +775,19 @@
       }
     ]
   },
+  "academia.edu": {
+    "_name": "Academia",
+    ".": [
+      {
+        "title": "interest",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/Documents/in/:interest"
+        ],
+        "target": "/academia/topic/:interest"
+      }
+    ]
+  },
   "accessbriefing.com": {
     "_name": "Access Briefing",
     ".": [
@@ -4088,6 +4101,19 @@
           "/"
         ],
         "target": "/darwinawards/"
+      }
+    ]
+  },
+  "dataguidance.com": {
+    "_name": "DataGuidance",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/search/news"
+        ],
+        "target": "/dataguidance/news"
       }
     ]
   },
@@ -8723,6 +8749,14 @@
           "/"
         ],
         "target": "/javdb/tags/:query?/:category?"
+      },
+      {
+        "title": "番号",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/"
+        ],
+        "target": "/javdb/video_codes/:code/:filter?"
       }
     ]
   },
@@ -11577,6 +11611,19 @@
       }
     ]
   },
+  "npmjs.com": {
+    "_name": "NPM",
+    "www": [
+      {
+        "title": "Package",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/package/:name"
+        ],
+        "target": "/npm/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}"
+      }
+    ]
+  },
   "ntdm9.com": {
     "_name": "NT动漫",
     ".": [
@@ -12703,6 +12750,27 @@
           "/en-sg/ps-plus/whats-new"
         ],
         "target": "/ps/monthly-games"
+      }
+    ]
+  },
+  "psyche.co": {
+    "_name": "Psyche",
+    ".": [
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:topic"
+        ],
+        "target": "/psyche/topic/:topic"
+      },
+      {
+        "title": "Types",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:type"
+        ],
+        "target": "/psyche/type/:type"
       }
     ]
   },

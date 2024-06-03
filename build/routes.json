@@ -2708,6 +2708,36 @@
     "name": "A 姐分享",
     "url": "nsfw.abskoop.com"
   },
+  "academia": {
+    "routes": {
+      "/topic/:interest": {
+        "path": "/topic/:interest",
+        "example": "/academia/topic/Urban_History",
+        "parameters": {
+          "interest": "interest"
+        },
+        "radar": [
+          {
+            "source": [
+              "academia.edu/Documents/in/:interest"
+            ],
+            "target": "/topic/:interest"
+          }
+        ],
+        "name": "interest",
+        "maintainers": [
+          "K33k0"
+        ],
+        "categories": [
+          "journal"
+        ],
+        "url": "academia.edu",
+        "location": "topics.ts"
+      }
+    },
+    "name": "Academia",
+    "url": "https://www.academia.edu/"
+  },
   "accessbriefing": {
     "routes": {
       "/:category{.+}?": {
@@ -14809,6 +14839,32 @@
     },
     "name": "Darwin Awards",
     "url": "darwinawards.com",
+    "categories": [
+      "other"
+    ]
+  },
+  "dataguidance": {
+    "routes": {
+      "/news": {
+        "name": "News",
+        "example": "/dataguidance/news",
+        "path": "/news",
+        "radar": [
+          {
+            "source": [
+              "dataguidance.com/search/news"
+            ]
+          }
+        ],
+        "maintainers": [
+          "harveyqiu"
+        ],
+        "url": "dataguidance.com/news",
+        "location": "index.ts"
+      }
+    },
+    "name": "DataGuidance",
+    "url": "dataguidance.com",
     "categories": [
       "other"
     ]
@@ -31788,6 +31844,46 @@
         "url": "javdb.com/",
         "description": ":::tip\n  在 [分類](https://javdb.com/tags) 中选定分类后，URL 中 `tags?` 后的字段即为筛选参数。\n\n  如 `https://javdb.com/tags?c2=5&c10=1` 中 `c2=5&c10=1` 为筛选参数。\n  :::\n\n  分类\n\n  | 有碼     | 無碼       | 歐美    |\n  | -------- | ---------- | ------- |\n  | censored | uncensored | western |",
         "location": "tags.ts"
+      },
+      "/video_codes/:code/:filter?": {
+        "path": "/video_codes/:code/:filter?",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/javdb/video_codes/SIVR",
+        "parameters": {
+          "id": "番号前缀",
+          "filter": "过滤，见下表，默认为 `全部`"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "javdb.com/"
+            ],
+            "target": ""
+          }
+        ],
+        "name": "番号",
+        "maintainers": [
+          "sgpublic"
+        ],
+        "url": "javdb.com/",
+        "description": "| 全部 | 可播放   | 單體作品 | 可下載   | 字幕  | 預覽圖  |\n  | ---- | -------- | -------- | -------- | ----- | ------- |\n  |      | playable | single   | download | cnsub | preview |",
+        "location": "videocodes.ts"
       }
     },
     "name": "JavDB",
@@ -41751,8 +41847,21 @@
     "routes": {
       "/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}": {
         "path": "/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "Package",
+        "maintainers": [
+          "Fatpandac"
+        ],
+        "categories": [
+          "program-update"
+        ],
+        "example": "/npm/package/rsshub",
+        "radar": [
+          {
+            "source": [
+              "www.npmjs.com/package/:name"
+            ]
+          }
+        ],
         "location": "package.ts"
       }
     },
@@ -46446,6 +46555,66 @@
     "name": "PlayStation Store",
     "url": "www.playstation.com"
   },
+  "psyche": {
+    "routes": {
+      "/topic/:topic": {
+        "path": "/topic/:topic",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/psyche/topic/therapeia",
+        "parameters": {
+          "topic": "Topic"
+        },
+        "radar": [
+          {
+            "source": [
+              "psyche.co/:topic"
+            ]
+          }
+        ],
+        "name": "Topics",
+        "maintainers": [
+          "emdoe"
+        ],
+        "description": "Supported categories: Therapeia, Eudaimonia, and Poiesis.",
+        "location": "topic.ts"
+      },
+      "/type/:type": {
+        "path": "/type/:type",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/psyche/type/ideas",
+        "parameters": {
+          "type": "Type"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "psyche.co/:type"
+            ]
+          }
+        ],
+        "name": "Types",
+        "maintainers": [
+          "emdoe"
+        ],
+        "description": "Supported types: Ideas, Guides, and Films.",
+        "location": "type.ts"
+      }
+    },
+    "name": "Psyche",
+    "url": "psyche.co"
+  },
   "pts": {
     "routes": {
       "/curations": {
@@ -46560,6 +46729,29 @@
     },
     "name": "PubMed",
     "url": "pubmed.ncbi.nlm.nih.gov"
+  },
+  "pubscholar": {
+    "routes": {
+      "/explore/:category?/:keyword?": {
+        "path": "/explore/:category?/:keyword?",
+        "name": "Explore",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/pubscholar/explore",
+        "parameters": {
+          "category": "Category, see the table below, `articles` by default",
+          "keyword": "Search Keyword"
+        },
+        "description": "| Articles / 论文 | Patents / 专利 | Reports / 领域快报 | Information / 动态快讯 | Datasets / 科学数据 | Books / 图书 |\n| --------------- | -------------- | ------------------ | ---------------------- | ------------------- | ------------ |\n| articles        | patents        | bulletins          | reports                | sciencedata         | books        |",
+        "location": "explore.ts"
+      }
+    },
+    "name": "PubScholar 公益学术平台",
+    "url": "pubscholar.cn",
+    "categories": [
+      "journal"
+    ]
   },
   "pumc": {
     "routes": {
@@ -54640,6 +54832,41 @@
     },
     "name": "Surfshark",
     "url": "surfshark.com"
+  },
+  "sustainabilitymag": {
+    "routes": {
+      "/articles": {
+        "path": "/articles",
+        "name": "Articles",
+        "url": "sustainabilitymag.com/articles",
+        "maintainers": [
+          "mintyfrankie"
+        ],
+        "categories": [
+          "other"
+        ],
+        "example": "/sustainabilitymag/articles",
+        "radar": [
+          {
+            "source": [
+              "https://sustainabilitymag.com/articles"
+            ],
+            "target": "/sustainabilitymag/articles"
+          }
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "articles.ts"
+      }
+    },
+    "name": "Sustainability Magazine",
+    "url": "https://sustainabilitymag.com"
   },
   "sustech": {
     "routes": {
