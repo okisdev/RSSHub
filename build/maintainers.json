@@ -590,6 +590,9 @@
   "/behance/:user/:type?": [
     "MisteryMonster"
   ],
+  "/beijingprice/:category{.+}?": [
+    "nczitzk"
+  ],
   "/bellroy/new-releases": [
     "EthanWng97"
   ],
@@ -873,6 +876,9 @@
   ],
   "/buaa/news/:type": [
     "AlanDecode"
+  ],
+  "/bugzilla/bug/:site/:bugId": [
+    "FranklinYu"
   ],
   "/bulianglin/": [
     "cnkmmk"
@@ -3620,6 +3626,9 @@
   "/manhuagui/subscribe": [
     "shininome"
   ],
+  "/manyvids/profile/vids/:uid": [
+    "TonyRL"
+  ],
   "/mastodon/account_id/:site/:account_id/statuses/:only_media?": [
     "notofoe"
   ],
@@ -4883,6 +4892,9 @@
   "/ruancan/": [],
   "/ruancan/search/:keyword?": [],
   "/ruancan/user/:id": [],
+  "/ruc/ai/:category?": [
+    "yinhanyan"
+  ],
   "/ruc/hr/:category?": [
     "nczitzk"
   ],
@@ -5360,6 +5372,9 @@
   "/sspai/matrix": [
     "feigaoxyz"
   ],
+  "/sspai/prime/community": [
+    "mintyfrankie"
+  ],
   "/sspai/series/:id": [
     "TonyRL"
   ],
@@ -5404,6 +5419,9 @@
   ],
   "/steam/search/:params": [
     "moppman"
+  ],
+  "/steam/workshopsearch/:appid?/:routeParams?": [
+    "NyaaaDoge"
   ],
   "/stheadline/std/realtime/:category{.+}?": [],
   "/stockedge/daily-updates/news": [
@@ -5655,7 +5673,8 @@
     "AgFlore"
   ],
   "/theinitium/channel/:type?/:language?": [
-    "prnake"
+    "prnake",
+    "mintyfrankie"
   ],
   "/theinitium/follow/articles/:language?": [
     "AgFlore"
